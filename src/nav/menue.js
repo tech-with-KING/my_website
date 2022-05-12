@@ -11,6 +11,7 @@ import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
 import ClearTwoToneIcon from '@mui/icons-material/ClearTwoTone';
 import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
 import cosmic from "../img/tile.svg"
+import Slide_Bar from '../components/slidder/slidebar';
 
 const Menue_Bar=(props)=>{
     const [toggle,settoggle]=useState(false)   
@@ -45,12 +46,13 @@ const Menue_Bar=(props)=>{
         {
             props.position<=0? 
                     <div className='storymode' >
-                        <img src={cosmic} alt='logo'/>
-                        <div className='about'>
+                        {/* <img src={cosmic} alt='logo'/> */}
+                        {/* <div className='about'>
                             <div></div>
                             <div className='circle'>{'>'}</div>
                             <div className='circle1'>{'<'}</div>
-                        </div>
+                        </div> */}
+                        <Slide_Bar />
                         <div className='top_bar' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
                             <div onClick={()=>{toggle ?settoggle(false) :settoggle(true)}} className='ico' style={toggle ?{backgroundColor:'transparent'}:{backgroundColor:'transparent'}}><MenuIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /> </div>
                             <div onClick={()=>{darkmode()}} className='light' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg , color:coloring.darkcl}}>{dark?<LightModeIcon style={{fontSize:'30px',color:'white',backgroundColor:'black',fontWeight:'bold'}}/>:<DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} />}</div>

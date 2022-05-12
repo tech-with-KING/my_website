@@ -1,6 +1,7 @@
 import React from 'react';
 import './body.css'
 import { useState } from 'react';
+import Carded from '../components/blogcard/bob';
 
 
 const Body=(props)=>{
@@ -42,10 +43,7 @@ const Body=(props)=>{
                 {
                     data.map((data)=>{
                         return(
-                            <div className='article' >
-                                <div className='img'></div>
-                                <p>{data.text}</p>
-                            </div>
+                            <Carded /> 
                         )
                     })
                 }

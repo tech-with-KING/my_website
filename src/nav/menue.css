@@ -57,13 +57,13 @@
 }
 
 .storymode{
-    height: 400px;
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-direction: column;
-    background-color:white;
+    background-color:#000020;
     transition: 1s ease-in linear;
 }
 .menuebar .li:hover {
