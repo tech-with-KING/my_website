@@ -1,0 +1,150 @@
+.header{
+    height: inherit;
+    width: 100vw;
+    display: flex;
+
+    flex-direction: column;
+}
+.logo{
+
+    transition: 0.5s linear;
+    background-position: center;
+  
+}
+.about{
+    height: 499px;
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+}
+.top_bar{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   width: 100%;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    background-color:white;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -20px;
+    font-size: 20px;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+    
+}
+.circle1{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+    right: -85%;
+    font-size: 20px;
+}
+
+.storymode{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-color:white;
+    transition: 1s ease-in linear;
+}
+.menuebar .li:hover {
+    font-weight: bolder;
+    background-color:white;
+    color: black;
+    
+}
+ 
+.menuebar .li{
+    min-width: 200px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.menuebar{
+    transition: 0.5s linear;
+    height: 100vh;
+    background:black;
+    color: white;
+    width: 0;
+    max-width: 250px;
+    line-height: 60px;
+    list-style: none;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    z-index: 0;
+    position: fixed;
+    overflow-x: hidden;
+    left: 0;  
+    cursor: pointer; 
+}  
+
+
+@media (min-width: 650px){
+
+.menuebar .li:hover {
+    font-weight: bolder;
+    background-color:white;
+    color: black;
+    
+}
+
+.menuebar .li{
+    min-width: 200px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.menuebar{
+    transition: 0.7s linear;
+    height: 100vh;
+    background:black;
+    color: white;
+    width: 0;
+    max-width: 250px;
+    line-height: 60px;
+    list-style: none;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;  
+    cursor: pointer; 
+}  
+}
