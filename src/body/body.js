@@ -39,6 +39,7 @@ const Body=(props)=>{
 
     return(
         <div className='body'>
+            <h1>Articles</h1>
             <div className='my_projects'>
                 {
                     data.map((data)=>{
@@ -49,13 +50,12 @@ const Body=(props)=>{
                 }
             </div>
             <div className='tech_articles'>
+                <h1>Articles</h1>
                 {
                     data.map((data)=>{
                         return(
-                            <div className='article' >
-                                <div className='img'></div>
-                                <p>{data.text}</p>
-                            </div>
+                            <Carded /> 
+                        
                         )
                     })
                 }

@@ -21,6 +21,7 @@
 .body{
     height: inherit;
     display: flex;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -32,11 +33,11 @@
 .tech_articles{
     height: inherit;
     display: flex;
-    align-items: center;
+    align-items: space-e;
     justify-content: center;
     width: 100vw;
-    flex-direction: row;
-    background-color:rgb(160, 158, 158);
+    flex-direction:column;
+    background-color:rgb(59, 54, 54);
     padding: 20px;
     box-sizing: border-box;
 }
