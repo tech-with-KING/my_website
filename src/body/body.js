@@ -2,6 +2,9 @@ import React from 'react';
 import './body.css'
 import { useState } from 'react';
 import Carded from '../components/blogcard/bob';
+import { motion } from 'framer-motion';
+import Carded_Two from '../components/blogcard/bob2';
+import bgi from './sc/undraw_programmer_re_owql.svg'
 
 
 const Body=(props)=>{
@@ -38,23 +41,45 @@ const Body=(props)=>{
   ]
 
     return(
+        
         <div className='body'>
-            <h1>Articles</h1>
+            <motion.div className='hot'
+              initial={{opacity:0, translateX:-200}}
+              animate={{opacity:1, translateX: 0}}
+              transition={{duration:1.5}}
+             >
+             <h1>Projects</h1>
+
+            </motion.div>
+            
             <div className='my_projects'>
                 {
                     data.map((data)=>{
                         return(
-                            <Carded /> 
+                            <Carded 
+                          
+                            /> 
                         )
                     })
                 }
-            </div>
-            <div className='tech_articles'>
-                <h1>Articles</h1>
+                <div className='line'></div>
+            
+           
+            
+            <motion.div className='hot'
+              initial={{opacity:0, translateX:200}}
+              animate={{opacity:1, translateX: 0}}
+              transition={{duration:1}}
+             >
+             <h1>Articles</h1>
+
+            </motion.div>
+            
+                
                 {
                     data.map((data)=>{
                         return(
-                            <Carded /> 
+                            <Carded_Two />
                         
                         )
                     })

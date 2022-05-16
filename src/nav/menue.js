@@ -43,28 +43,10 @@ const Menue_Bar=(props)=>{
                             <a className='li' href='' ><LibraryBooksIcon style={{marginRight:'5px'}}/>Course Outline</a>
                             <a to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</a>   
                 </div>
-        {
-            props.position<=0? 
-                    <div className='storymode' >
-                        {/* <img src={cosmic} alt='logo'/> */}
-                        {/* <div className='about'>
-                            <div></div>
-                            <div className='circle'>{'>'}</div>
-                            <div className='circle1'>{'<'}</div>
-                        </div> */}
-                        <Slide_Bar />
-                        <div className='top_bar' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
-                            <div onClick={()=>{toggle ?settoggle(false) :settoggle(true)}} className='ico' style={toggle ?{backgroundColor:'transparent'}:{backgroundColor:'transparent'}}><MenuIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /> </div>
-                            <div onClick={()=>{darkmode()}} className='light' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg , color:coloring.darkcl}}>{dark?<LightModeIcon style={{fontSize:'30px',color:'white',backgroundColor:'black',fontWeight:'bold'}}/>:<DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} />}</div>
-                        </div>
-                    </div>
-            :
-            <div className='top_bar' style={dark?{backgroundColor:coloring.darkbg,transition:'1s ease', color:coloring.lightcl,position:'fixed'}:{backgroundColor:coloring.lightbg , color:coloring.darkcl,position:'fixed'}} >
-                <div onClick={()=>{toggle ?settoggle(false) :settoggle(true)}} className='ico' style={toggle ?{backgroundColor:'transparent'}:{backgroundColor:'transparent'}}><MenuIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /> </div>
-                <div onClick={()=>{darkmode()}} className='light' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg , color:coloring.darkcl}}>{dark?<LightModeIcon style={{fontSize:'30px',color:'white',backgroundColor:'black',fontWeight:'bold'}}/>:<DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} />}</div>
-            </div>
-        }
-              
+        
+                <div className='storymode'>
+                        <Slide_Bar />           
+                 </div>
         </div>    
     )
 }

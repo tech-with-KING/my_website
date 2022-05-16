@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './bob.css'
+import './bob2.css'
 import bob from './img.JPG'
-class Carded extends Component {
+class Carded_Two extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,16 +11,15 @@ class Carded extends Component {
     render() { 
         return ( 
         <>
-            <div class="container_">
-                <div class="card_">
-                    <div class="card__header">
+            <div class="container">
+                <div class="card">
+                 <div class="card__header">
                     <img src={bob} alt="card__image" class="card__image" width="600"/>
-                    </div>
-                    <div class="card__body_">
+                </div>
+                <div class="card__body">
                     <span class="tag tag-red">react</span>
                     <h4>Race to your heart content</h4>
-                    <p style={{margin:'5px'}}>Loestiae ihil! At ea atque quidem!</p>
-                    </div>
+                    <p style={{margin:'5px'}}>!</p>
                     <div class="card__footer">
                     <div class="user">
                         <img src={bob}  alt="user__image" class="user__image"/>
@@ -29,7 +28,10 @@ class Carded extends Component {
                         <small>2d ago</small>
                         </div>
                     </div>
-                    </div>
+                  </div>
+
+                </div>
+                 
                 </div>
             </div>
         </>
@@ -37,4 +39,4 @@ class Carded extends Component {
     }
 }
  
-export default Carded;
+export default Carded_Two;

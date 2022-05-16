@@ -1,16 +1,11 @@
 .header{
-    height: inherit;
+    min-height: 70vh;
     width: 100vw;
     display: flex;
-
+    top: 0;
     flex-direction: column;
 }
-.logo{
 
-    transition: 0.5s linear;
-    background-position: center;
-  
-}
 .about{
     height: 499px;
     margin: 10px;
@@ -22,12 +17,7 @@
     border: 1px;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
 }
-.top_bar{
-   display: flex;
-   flex-direction: row;
-   align-items: flex-end;
-   width: 100%;
-}
+
 .circle{
     height: 40px;
     width: 40px;
@@ -42,23 +32,12 @@
     box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
     
 }
-.circle1{
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
-    right: -85%;
-    font-size: 20px;
-}
 
 .storymode{
     height: inherit;
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-items: center;
     justify-content: center;
     width: 100%;

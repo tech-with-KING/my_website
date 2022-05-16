@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); */
 
 *,
 *::before,
@@ -8,7 +8,21 @@
   margin: 0;
 }
 
-.container_ {
+/* .container {
+  display: flex;
+  overflow: scroll;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+
+  margin-block: 2rem;
+  background-color: rgb(0, 238, 255);
+  width: 700px;
+  padding: 0;
+  
+} */
+.container{
   display: flex;
   margin-bottom: 10px;
   width: 100vw;
@@ -19,29 +33,31 @@
   padding: 0;
   margin-top: 10px;
 }
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
 
-.card_ {
+.card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
   overflow: hidden;
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ECE9E6;
-  width: 70%;
-  min-width: 300px;
+  background: blue;
+  
 
 }
 
 
 
-.card__body_ {
+.card__body {
   padding: 1rem;
-  width: 100%;
   display: flex;
-  font-weight: bold;
-  align-items: center;
   flex-direction: column;
-
+  gap: .5rem;
 }
 
 
