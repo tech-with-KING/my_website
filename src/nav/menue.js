@@ -29,7 +29,6 @@ const Menue_Bar=(props)=>{
       darkcl:'black',
       lightcl:'white',
       darkbd:'',
-      lightbd:''
   }
   
 

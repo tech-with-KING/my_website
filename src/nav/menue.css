@@ -45,14 +45,14 @@
     background-color:#000020;
     transition: 1s ease-in linear;
 }
-.menuebar .li:hover {
+/* .menuebar .li:hover {
     font-weight: bolder;
     background-color:white;
     color: black;
     
-}
+} */
  
-.menuebar .li{
+/* .menuebar .li{
     min-width: 200px;
     transition: 0.4s ease;
     text-decoration: none;
@@ -83,12 +83,12 @@
     overflow-x: hidden;
     left: 0;  
     cursor: pointer; 
-}  
+}   */
 
 
 @media (min-width: 650px){
 
-.menuebar .li:hover {
+/* .menuebar .li:hover {
     font-weight: bolder;
     background-color:white;
     color: black;
@@ -104,10 +104,10 @@
     flex-direction: row;
     align-items: center;
     padding-left: 20px;
-}
+} */
 
 
-.menuebar{
+/* .menuebar{
     transition: 0.7s linear;
     height: 100vh;
     background:black;
@@ -125,5 +125,5 @@
     overflow-x: hidden;
     left: 0;  
     cursor: pointer; 
-}  
+}   */
 }

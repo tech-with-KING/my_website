@@ -7,10 +7,24 @@ class Card_componnt extends Component {
     state = {  } 
     render() { 
         const animae=[
-           <FacebookTwoTone/>,
-           <Twitter/>,
-           <Instagram/>,
-           <FacebookTwoTone/>
+            {
+                id:1,
+                item:<FacebookTwoTone/>,
+            },
+           {
+               id:2,
+               item: <Twitter/>,
+           },
+           {
+            id:3,
+            item:   <Instagram/>
+        },
+        {
+            id:4,
+            item:  <FacebookTwoTone/>
+        }
+        
+          
         ]
         return (
         <>
@@ -19,19 +33,22 @@ class Card_componnt extends Component {
                 <h1>I am kingsley</h1>
                 <p class="title">CEO & Founder, Example</p>
                 <p>Cosmic School</p>
+                <div  className='ba'>
                 {
-                    animae.map((anim)=>{
+                    animae.map((anim,i)=>{
                         return(
-                            <motion.a href="#"
-                                key={anim}
-                                initial={{opacity:0, translateX:-50}}
+                            <motion.div href="#" className='div'
+                                key={anim.id}
+                                initial={{opacity:0, translateX:-40}}
                                 animate={{opacity:1, translateX: 0}}
-                                transition={{duration:1}}
-
-                            >{anim}</motion.a>
+                                transition={{duration:0.5,delay:i*0.5}}
+                            >{anim.item }</motion.div>
                         )
                     })
                 }
+
+                </div>
+             
                
                 
                
