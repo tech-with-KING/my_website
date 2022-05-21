@@ -31,20 +31,14 @@ class App extends Component {
    
     return (
        <>
-       <Menue_Bar />
+       <Menue_Bar toggle={toggle}/>
+  
        <div className='top_bar'  >
-       <div className='ico' onClick={()=>{settoggle()}}>{!toggle?<MenuIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /> :<ClearTwoToneIcon  style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}}/>}</div>
+
+                <div className='ico' onClick={()=>{settoggle()}}>{!toggle?<MenuIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /> :<ClearTwoToneIcon  style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}}/>}</div>
                 <div  className='light'><DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} /></div>
         </div>
-        <div className='menuebar' style={ toggle?{height:'70vh'}:{height:'0',paddingLeft:'0'}}  >
-                          <div className='op' ></div>
-                            <a className='li' to={'/'}> <HomeIcon style={{marginRight:'5px'}}/>Home</a>   
-                            <a className='li' href='https://drive.google.com/drive/folders/1q9ahRAe-SFAogpu43f0JeCTfNumFIcnN?usp=sharing' ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Materials</a>
-                            <a className='li' to={'/solutions'}> <CreditScoreIcon style={{marginRight:'5px'}}/> My Scores</a>
-                            <a className='li' href='' ><LibraryBooksIcon style={{marginRight:'5px'}}/>Course Outline</a>
-                            <a to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</a>   
-                            <div className='op' ></div>
-                </div>
+        
         <Body></Body>
         <DownBar></DownBar>
        </>

@@ -57,6 +57,19 @@
     padding: 20px;
     box-sizing: border-box;
 }
+.hots{
+    height: 50vh;
+    width: 100vw;
+    background-image: url('./sc/undraw_programmer_re_owql.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    background-size: contain;
+
+}
+.hot h1{
+  color: #000020;
+}
 .hot{
     height: 50vh;
     width: 100vw;
@@ -66,6 +79,20 @@
     background-size: contain;
 
 }
-.hot h1{
-  color: #000020;
+@media (min-width: 1050px){
+    .my_projects{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .eop{
+        display: flex;
+        flex-direction: row;
+    }
 }

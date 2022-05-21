@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Carded_Two from '../components/blogcard/bob2';
 import bgi from './sc/undraw_programmer_re_owql.svg'
 
-
+import foot from './sc/undraw_online_articles_re_yrkj.svg';
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)   
     const [dark,setdark]=useState(false)   
@@ -53,6 +53,7 @@ const Body=(props)=>{
             </motion.div>
             
             <div className='my_projects'>
+                <div className='eop'>
                 {
                     data.map((data)=>{
                         return(
@@ -62,11 +63,14 @@ const Body=(props)=>{
                         )
                     })
                 }
+
+                </div>
+             
                 <div className='line'></div>
             
            
             
-            <motion.div className='hot'
+            <motion.div className='hots'
               initial={{opacity:0, translateX:200}}
               animate={{opacity:1, translateX: 0}}
               transition={{duration:1}}

@@ -20,11 +20,10 @@
   margin-top: 10px;
 }
 
-.card {
+.card{
   display: flex;
   flex-direction: column;
   width: 85%;
-  max-width: 450px;
   height: inherit;
   padding-bottom: 10px;
   overflow: hidden;
@@ -103,11 +102,12 @@
     width: 40%;
   
   }
-  .card {
+  .card{
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: unset;
     height: inherit;
+  
     padding-bottom: 0px;
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.4);

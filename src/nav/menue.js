@@ -14,7 +14,7 @@ import cosmic from "../img/tile.svg"
 import Slide_Bar from '../components/slidder/slidebar';
 
 const Menue_Bar=(props)=>{
-    const [toggle,settoggle]=useState(false)   
+    const {toggle}=props   
     const [dark,setdark]=useState(false)   
     const darkmode = () =>{
         if (dark) {
@@ -34,7 +34,7 @@ const Menue_Bar=(props)=>{
 
     return(
         <div className='header'>
-                <div className='menuebar' style={ toggle?{width:'60%'}:{width:'0',paddingLeft:'0'}}  >
+                <div className='menuebar' style={ toggle?{width:'50%'}:{width:'0',paddingLeft:'0'}}  >
                           <div onClick={()=>{toggle ?settoggle(false) :settoggle(true)}}><ClearTwoToneIcon  style={{position:'absolute',top:'0',margin:'5px', fontSize:'30px', fontWeight:'bold'}}/></div>
                             <a className='li' to={'/'}> <HomeIcon style={{marginRight:'5px'}}/>Home</a>   
                             <a className='li' href='https://drive.google.com/drive/folders/1q9ahRAe-SFAogpu43f0JeCTfNumFIcnN?usp=sharing' ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Materials</a>
