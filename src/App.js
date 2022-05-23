@@ -16,7 +16,7 @@ import DownBar from './root/bottom_bar';
 
 class App extends Component {
   state={
-    toggle:true
+    toggle:false
   }
   
   render() {
