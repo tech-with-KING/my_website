@@ -11,7 +11,7 @@ class Carded extends Component {
     render() { 
         return ( 
         <>
-            <div class="container_">
+            <div class="container_" style={{width:'400px'}}>
                 <div class="card_">
                     <div class="card__header">
                     <img src={bob} alt="card__image" class="card__image" width="600"/>
@@ -25,8 +25,8 @@ class Carded extends Component {
                     <div class="user">
                         <img src={bob}  alt="user__image" class="user__image"/>
                         <div class="user__info">
-                        <h5>John Doe</h5>
-                        <small>2d ago</small>
+                        <h5>@Kingsley</h5>
+                        <small>2d weeks ago</small>
                         </div>
                     </div>
                     </div>

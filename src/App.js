@@ -31,7 +31,7 @@ class App extends Component {
    
     return (
        <>
-       <Menue_Bar toggle={toggle}/>
+       <Menue_Bar  toggle={toggle}/>
   
        <div className='top_bar'  >
 

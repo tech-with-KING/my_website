@@ -34,7 +34,7 @@ const Menue_Bar=(props)=>{
 
     return(
         <div className='header'>
-                <div className='menuebar' style={ toggle?{width:'50%'}:{width:'0',paddingLeft:'0'}}  >
+                <div className='menuebar' style={toggle?{height:'500px'}:{height:'0',paddingLeft:'0'}}  >
                           <div onClick={()=>{toggle ?settoggle(false) :settoggle(true)}}><ClearTwoToneIcon  style={{position:'absolute',top:'0',margin:'5px', fontSize:'30px', fontWeight:'bold'}}/></div>
                             <a className='li' to={'/'}> <HomeIcon style={{marginRight:'5px'}}/>Home</a>   
                             <a className='li' href='https://drive.google.com/drive/folders/1q9ahRAe-SFAogpu43f0JeCTfNumFIcnN?usp=sharing' ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Materials</a>
@@ -43,7 +43,7 @@ const Menue_Bar=(props)=>{
                             <a to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</a>   
                 </div>
         
-                <div className='storymode'>
+                <div className='storymode' style={{zIndex:"-1"}}>
                         <Slide_Bar />           
                  </div>
         </div>    
