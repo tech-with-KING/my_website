@@ -40,23 +40,23 @@
     background-color:white;
     padding: 20px;
     box-sizing: border-box;
-}
+} 
 .line{
     width: 95%;
     margin-top: 40px;
     margin-bottom: 20px;
     border: 1px solid black;
 }
-.my_projects{
+ .my_projects{
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     flex-direction: column;
-    padding: 20px;
     box-sizing: border-box;
 }
+ 
 .hots{
     height: 50vh;
     width: 100vw;
@@ -79,20 +79,11 @@
     background-size: contain;
 
 }
-@media (min-width: 1050px){
-    .my_projects{
-        height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        flex-direction: column;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
+@media (min-width: 850px){
     .eop{
         display: flex;
         flex-direction: row;
     }
+
+ 
 }

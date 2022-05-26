@@ -55,6 +55,7 @@
   height: 200px;
   background-position: center;
   background-size: cover;
+  color: white;
   background-repeat: no-repeat;
   width: 100%;
 
@@ -97,18 +98,20 @@
     background-color: black;
     height: 100%;
     min-width: 400px;
-    width: 40%;
+    width: 30%;
   
   }
   .card{
     display: flex;
     flex-direction: row;
     width: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: inherit;
-  
+    width: 95%;
     padding-bottom: 0px;
     overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.3);
     border-radius: 1em;
   }
 

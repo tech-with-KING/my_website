@@ -1,0 +1,25 @@
+Info 0    [10:11:35.652] Starting TS Server
+Info 1    [10:11:35.653] Version: 4.6.4
+Info 2    [10:11:35.653] Arguments: /snap/node/6275/bin/node /home/cosmic/.emacs.d/.cache/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js --logFile /home/cosmic/Documents/projects/my_blog/src/body/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/ca4413318013f595f37a328bb58b006e/tscancellation*
+Info 3    [10:11:35.653] Platform: linux NodeVersion: 16 CaseSensitive: true
+Info 4    [10:11:35.653] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [10:11:35.685] Format host information updated
+Info 6    [10:11:35.707] Search path: /home/cosmic/Documents/projects/my_blog/src/body
+Info 7    [10:11:35.708] For info: /home/cosmic/Documents/projects/my_blog/src/body/body.js :: No config files found.
+Info 8    [10:11:35.719] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [10:12:00.450] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 24730.4712620005ms
+Info 10   [10:12:00.450] Project '/dev/null/inferredProject1*' (Inferred)
+Info 11   [10:12:00.450] 	Files (346)
+
+Info 12   [10:12:00.450] -----------------------------------------------
+Info 13   [10:12:00.646] AutoImportProviderProject: found 6 root files in 6 dependencies in 192.04247099906206 ms
+Info 14   [10:12:00.647] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 15   [10:12:04.187] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 3539.436275999993ms
+Info 16   [10:12:04.187] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 17   [10:12:04.187] 	Files (848)
+
+Info 18   [10:12:04.187] -----------------------------------------------
+Info 19   [10:27:31.472] DirectoryWatcher:: Triggered with /home/cosmic/Documents/projects/my_blog/src/body/#body.css# :: WatchInfo: /home/cosmic/Documents/projects/my_blog/src/body 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 20   [10:27:31.597] Elapsed:: 0.3742910008877516ms DirectoryWatcher:: Triggered with /home/cosmic/Documents/projects/my_blog/src/body/#body.css# :: WatchInfo: /home/cosmic/Documents/projects/my_blog/src/body 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 21   [10:28:02.049] DirectoryWatcher:: Triggered with /home/cosmic/Documents/projects/my_blog/src/body/#body.css# :: WatchInfo: /home/cosmic/Documents/projects/my_blog/src/body 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 22   [10:28:02.049] Elapsed:: 0.03993000090122223ms DirectoryWatcher:: Triggered with /home/cosmic/Documents/projects/my_blog/src/body/#body.css# :: WatchInfo: /home/cosmic/Documents/projects/my_blog/src/body 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
