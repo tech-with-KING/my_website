@@ -1,15 +1,17 @@
+
 import React from 'react';
 import './body.css'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Carded from '../components/blogcard/bob';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import Carded_Two from '../components/blogcard/bob2';
-import bgi from './sc/undraw_programmer_re_owql.svg'
-
-import foot from './sc/undraw_online_articles_re_yrkj.svg';
+import {useInView} from "react-intersection-observer"
+import {useAnimation} from "framer-motion"
 const Body=(props)=>{
-    const [toggle,settoggle]=useState(false)   
-    const [dark,setdark]=useState(false)   
+    const [toggle,settoggle]=useState(false)
+    const {ref:article_ref,inView:article_view}=useInView()
+    const {ref:projec_ref,inView:project_view}=useInView()
+    const [dark,setdark]=useState(false)
     const darkmode = () =>{
         if (dark) {
             setdark(false)
@@ -25,44 +27,51 @@ const Body=(props)=>{
       darkbd:'',
       lightbd:''
   }
-  const data =[
+  const datas =[
       {
+          id:1,
           text:"this is going to be some of the best articles yuo will ever get to read",
           img:'studio'
       },
       {
+        id:2,
         text:"this is going to be some of the best articles yuo will ever get to read",
         img:'studio'
     },
     {
+        id:3,
         text:"this is going to be some of the best articles yuo will ever get to read",
-        img:'studio'
+         img:'studio'
     }
   ]
 
     return(
-        
         <div className='body'>
             <motion.div className='hot'
-              initial={{opacity:0, translateX:-200}}
-              animate={{opacity:1, translateX: 0}}
-              transition={{duration:1.5}}
+	      initial={{opacity:0, translateX:-200}}
+              transition={{duration:1}}
              >
              <h1>Projects</h1>
 
-            </motion.div>
-            
+            </motion.div> 
             <div className='my_projects'>
-                <div className='eop'>
-                {
-                    data.map((data)=>{
+                <div  className='eop'>
+		    <div ref={projec_ref} className="p_div">
+			   {
+                    datas.map((data,i)=>{
                         return(
-                            <Carded 
-                          
-                            /> 
+                            <motion.div key={data.id}
+			         initial={{translateX:"-100vw"}}
+				animate={project_view?{opacity:1, translateX: 0}:{}}
+					transition= {{duration:1.5,delay:i*1.5}} > 
+                                <Carded /> 
+                            </motion.div>
                         )
                     })
                 }
+			
+		    </div>
+		 
 
                 </div>
              
@@ -70,24 +79,28 @@ const Body=(props)=>{
             
            
             
-            <motion.div className='hots'
-              initial={{opacity:0, translateX:200}}
-              animate={{opacity:1, translateX: 0}}
-              transition={{duration:1}}
-             >
+            <motion.div  className='hots'
+			            >
              <h1>Articles</h1>
 
             </motion.div>
             
-                
+                <div ref={article_ref}>
                 {
-                    data.map((data)=>{
+                    datas.map((data,i)=>{
                         return(
-                            <Carded_Two />
+			    <motion.div
+                                key={data.id}
+			         initial={{opacity:0, translateX:-100}}
+				animate={article_view?{opacity:1, translateX: 0}:{}}
+				transition={{duration:1,delay:i*1}} >
+                                <Carded_Two />
+                            </motion.div>
                         
                         )
                     })
                 }
+		    </div>
             </div>
                
         </div>    
