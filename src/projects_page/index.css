@@ -1,0 +1,57 @@
+.project_container{
+    background-color: blue;
+    height: inherit;
+    width: 90vw;
+    min-width: 90vw;
+}
+.project_grid{
+    --gap:10px;
+    --num-cols:2;
+    --row-height:110px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); 
+}
+.project_grid div
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: black;
+    object-fit: cover;
+}
+.first_element{
+    grid-row: span 2;
+}
+@media screen and (min-width: 900px)
+{
+    .project_container{
+    background-color: blue;
+    height: inherit;
+    width: 60vw;
+    min-width: 60vw;
+}
+.project_grid{
+    --gap:10px;
+    --num-cols:3;
+    --row-height:220px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap); 
+}
+.project_grid div
+{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    object-fit: cover;
+}
+
+}
