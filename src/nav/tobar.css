@@ -7,4 +7,11 @@
   width: 100%;
   background-color: rgb(259, 259, 259);
   border: none;
+  flex-direction: column;
+}
+.navbar{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
 }

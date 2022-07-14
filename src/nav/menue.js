@@ -1,7 +1,6 @@
 import React from 'react';
 import './menue.css'
 import { useState } from 'react';
-import Slide_Bar from '../components/slidder/slidebar'
 import HomeIcon from '@mui/icons-material/Home';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import CreditScoreIcon from '@mui/icons-material/CreditScore';
@@ -26,17 +25,10 @@ const Menue_Bar=(props)=>{
       lightcl:'white',
       darkbd:'',
   }
-    const set_toggle= ()=>{
-	toggle ? settoggle(false) : settoggle(true) 
-    }
-
     return(
-		<div className='header'>
-			<div className='menuebar' style={toggle ? { height: '500px' } : { height: '0', paddingLeft: '0' }}  >
-				<div onClick={() => { set_toggle() }}>
-					<ClearTwoToneIcon />
-				</div>
-				<a className='li' to={'/'}> <HomeIcon style={{ marginRight: '5px' }} />Home</a>
+
+	    <div className='menuebar' style={toggle ? { height: '500px',position:"fixed",top:'0',width:'50vw' } : { height: '0',position:'fixed',width:'0' }}  >
+	                        <a className='li' to={'/'}> <HomeIcon style={{ marginRight: '5px' }} />Home</a>
 				<a className='li' href={material_link} >
 					<MenuBookTwoToneIcon style={{ marginRight: '5px' }} /> Materialfs
 				</a>
@@ -45,12 +37,8 @@ const Menue_Bar=(props)=>{
 				<a to={""} className='li' ><InfoTwoToneIcon style={{ marginRight: '5px' }} />About</a>
 				<div className='tol'>currently studying at </div>
 				<div className='tol'>we can do whatever we believe we can <div className='circ'></div></div>
-			</div>
-
-			<div className='storymode' style={{ zIndex: "-1" }}>
-				<Slide_Bar />
-			</div>
-		</div>    
+	    </div>
+	    
     )
 }
 export default Menue_Bar;
