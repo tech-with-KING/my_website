@@ -2,7 +2,6 @@
     min-height: 70vh;
     width: 100vw;
     display: flex;
-    top: 0;
     flex-direction: column;
 }
 
@@ -78,7 +77,6 @@
     flex-direction: column;
     font-weight: bold;
     justify-content: center;
-    position: fixed;
     overflow-x: hidden;
     cursor: pointer; 
 }  
@@ -128,7 +126,6 @@
     flex-direction: column;
     font-weight: bold;
     justify-content: center;
-    position: fixed;
     overflow-x: hidden;
     cursor: pointer; 
 }  

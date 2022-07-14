@@ -3,40 +3,33 @@ import './App.css';
 import Body from './body/body';
 import Articles from "./article_page/index"
 import Menue_Bar from './nav/menue';
-import MenuIcon from '@mui/icons-material/Menu';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import ClearTwoToneIcon from '@mui/icons-material/ClearTwoTone';
+import Top_Bar from './nav/topbar'
 import DownBar from './root/bottom_bar';
 import Projects from "./projects_page/index"
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 class App extends Component {
 	state = {
-		toggle: false
+		toggle: true
 	}
 
 	render() {
 		const { toggle } = this.state
-		const settoggle = () => {
-			if (toggle) {
-				this.setState({ toggle: false })
-			} else {
-				this.setState({ toggle: true })
-			}
-		}
-
 		return (
 			<>
-			{/*	<Menue_Bar toggle={toggle} />*/}
+			
+			<Router>
+			<Menue_Bar toggle={toggle}/>
 
-				<div className='top_bar'  >
+		    <Top_Bar/>
+			<Routes>
+			<Route path="/" element={<Body />} />
+			<Route path="/articles" element={<Articles />} />
+			<Route path="/projects" element={<Projects />} />
+			<Route path="/topbar" element={<Top_Bar toggle={toggle} />} />
+		    </Routes>
+		    <DownBar />
+		 </Router>
 
-					<div className='ico' onClick={() => { settoggle() }}>{!toggle ? <MenuIcon style={{ fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in" }} /> : <ClearTwoToneIcon style={{ fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in" }} />}</div>
-					<div className='light'><DarkModeIcon style={{ fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in" }} /></div>
-				</div>
-				<Projects />
-			{/*	<Body></Body>*/}
-			{/*<Articles />*/}
-				<DownBar></DownBar>
 			</>
 		);
 	}

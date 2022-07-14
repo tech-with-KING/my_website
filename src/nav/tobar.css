@@ -1,0 +1,10 @@
+.top_bar{
+  display: flex;
+  z-index: 99999;
+  position: sticky;
+  top: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(259, 259, 259);
+  border: none;
+}
