@@ -12,6 +12,21 @@
     border: 1px;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.3) ;
 }
+.tech_stacks{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+}
+.tech_stacks div{
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
 .img{
     background-color: blue;
     border-radius: 10px  10px 0px 0px;

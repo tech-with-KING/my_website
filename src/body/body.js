@@ -46,11 +46,26 @@ const Body=(props)=>{
   ]
 
     return(
-        <div className='body'>
+            <div className='body'>
+	    {	    /* this part is the main home menu of the app */}
+
+
+	o	{/* this is the part i dispalay my different tech stacks in that small circle to show all the past projects i have done*/}
+	    <div className='tech_stacks'>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    
+	    </div>
             <motion.div className='hot'
-	      initial={{opacity:0, translateX:-200}}
+	      initial={{opacity:1}}
               transition={{duration:1}}
-             >
+            >
+	    
              <h1>Projects</h1>
 
             </motion.div> 
@@ -63,7 +78,7 @@ const Body=(props)=>{
                             <motion.div key={data.id}
 			         initial={{translateX:"-100vw"}}
 				animate={project_view?{opacity:1, translateX: 0}:{}}
-					transition= {{duration:1.5,delay:i*1.5}} > 
+					transition= {{duration:1,delay:i*1.5}} > 
                                 <Carded /> 
                             </motion.div>
                         )
@@ -77,10 +92,11 @@ const Body=(props)=>{
              
                 <div className='line'></div>
             
-           
+	{/*this part of the page is the part i add the remainint part of projec*/}
             
-            <motion.div  className='hots'
-			            >
+            <motion.div  className='hots' >
+
+	
              <h1>Articles</h1>
 
             </motion.div>

@@ -6,13 +6,11 @@ class Reviews extends Component {
     state = {  }
     render() { 
         return (  
-            <>
-            <div class="container">
-  <img src="bandmember.jpg" alt="Avatar" style="width:90px"/>
-  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-  <p>John Doe saved us from a web disaster.</p>
-</div>
-            </>
+		<div>
+		<h1>
+		hello world  to my friends on the internet
+		</h1>
+		</div>
         );
     }
 }
