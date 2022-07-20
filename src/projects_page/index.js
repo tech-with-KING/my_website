@@ -14,8 +14,8 @@ const Projects=(props)=>{
 	    <div className='first_element'></div>
 	    <div></div>
 	    <div></div>
-	    <div></div>
-	    <div></div>
+
+	    <div className='view_on_vercel'></div>
 	    </div>
         </div>    
     )

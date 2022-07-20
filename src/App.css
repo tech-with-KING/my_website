@@ -2,23 +2,5 @@
   text-align: center;
 }
 
-.top_bar{
-  display: flex;
-  z-index: 0;
-  position: sticky;
-  top: 0px;
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid black;
-  
-}
-
-.op{
-  width: 100%;
-  background-color: #000020;
-  height: 40px;
-}
-
 
 

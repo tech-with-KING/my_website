@@ -9,15 +9,16 @@ const Articles = (props) => {
 	const { ref: article_ref, inView: article_view } = useInView()
 	const { ref: projec_ref, inView: project_view } = useInView()
 	return (
-		<div className='articulate'>
+		<div className='article_container'>
 
-			<div className='articlate_con'>
+			<div className='_article_div'>
 				<p>
-					lorem20 dkddd ff djdjfidj fdjfidjf d djfsdus sdj bjddjdjdkdud sjfdfjf bdjfkdkdjf dfsjfdjfldidj
+					lorem20 dkddd ff djdjfidj 
 
-				</p>
+	    </p>
+	
 			</div>
-			<div className='list_menue'>
+			<div className='_menue'>
 				<ul>
 					<li>this day in june</li>
 					<li> this day in may</li>
