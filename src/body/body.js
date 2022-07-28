@@ -50,16 +50,20 @@ const Body=(props)=>{
 	    {	    /* this part is the main home menu of the app */}
 
 
-	o	{/* this is the part i dispalay my different tech stacks in that small circle to show all the past projects i have done*/}
+		{/* this is the part i dispalay my different tech stacks in that small circle to show all the past projects i have done*/}
 	    <div className='tech_stacks'>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
+	    <h3>TECH-STACKS</h3>
+	    <div className='t_s'>
+	    <div><div></div><h4>react</h4></div>
+	    <div><div></div><h4>react</h4></div>
+	    <div><div></div><h4>react</h4></div>
+	    <div><div></div><h4>react</h4></div>
+	    <div><div></div><h4>react</h4></div>
 	    
+	    </div>
+	    
+
+	
 	    </div>
             <motion.div className='hot'
 	      initial={{opacity:1}}

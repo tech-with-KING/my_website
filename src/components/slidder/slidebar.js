@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import Card_componnt from '../cardbar/cardbar';
 import './slidebar.css'
@@ -13,9 +12,11 @@ class Slide_Bar extends Component {
           <div class="slideshow-container">   
               
                  <div class="mySlides">
-                    <a class="prev" >&#10094;</a>
-                    <Card_componnt/>
-                    <a class="next" >&#10095;</a>
+                    <a class="prev" ></a>
+                <Card_componnt/>
+
+		
+                    <a class="next" ></a>
                  </div>
                 <div class="dot-container">
                     <span class="dot" ></span>
