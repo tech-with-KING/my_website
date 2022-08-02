@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Card_componnt from '../cardbar/cardbar';
+import Card_componnt,{Carded} from '../cardbar/cardbar';
+import {motion} from 'framer-motion'
 import './slidebar.css'
 
 class Slide_Bar extends Component {
@@ -7,21 +8,53 @@ class Slide_Bar extends Component {
         super(props);
     }
     state = {  }
-    render() { 
+    render() {
+	        const animae=[
+            {
+                id:1,
+                item:<Card_componnt/>,
+            },
+           {
+               id:2,
+               item: <Carded/>,
+           },
+           {
+            id:3,
+            item:   <Card_componnt/>
+        },
+        {
+            id:4,
+            item:  <Carded/>
+        }
+        ]
         return (  
           <div class="slideshow-container">   
               
                  <div class="mySlides">
-                    <a class="prev" ></a>
-                <Card_componnt/>
 
+		        {
+                    animae.map((anim,i)=>{
+                        return(
+                            <motion.div href="#" 
+                                key={anim.id}
+                            initial={{opacity:0, translateX:-100}}
+                            animate={{opacity:1, translateX: 0}}
+                            transition={{duration:0.5,delay:i*0.5}}
+			    exitBeforeEnter={true}
+			    exit={{opacity:0, translateY:-100}}
+                            >{anim.item }</motion.div>
+                        )
+                    })
+                }
 		
-                    <a class="next" ></a>
+                
                  </div>
                 <div class="dot-container">
+		<a  ></a>
                     <span class="dot" ></span>
                     <span class="dot" ></span>
                     <span class="dot"></span>
+		
                 </div>
 
             </div>

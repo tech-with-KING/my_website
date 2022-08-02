@@ -13,7 +13,6 @@
     box-shadow: 2px 6px 10px rgba(0,0,0,0.3) ;
 }
 .tech_stacks{
-        background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,10 +31,10 @@
 }
 .tech_stacks .t_s div div{
     background-color: blue;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .tech_stacks .t_s div {
     background-color:transparent ;
@@ -121,6 +120,41 @@
     flex-direction: column;
 }
 @media (min-width: 850px){
+    .tech_stacks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+}
+.tech_stacks .t_s{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+}
+.tech_stacks .t_s div div{
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.tech_stacks .t_s div {
+    background-color:transparent ;
+    width: unset;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+    padding: 5px;
+}
     .p_div{
 	display: flex;
 	flex-direction: row;

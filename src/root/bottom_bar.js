@@ -1,12 +1,15 @@
 import React from 'react';
 import './bottom_bar.css'
 import cosmic from '../img/s_tile.svg'
-import {FacebookSharp,GitHub, Twitter, LinkedIn, Instagram, ArrowDownward, ViewCarousel, ArrowDropUp} from '@mui/icons-material';
+import {FacebookSharp,GitHub, Twitter, LinkedIn, Instagram, ArrowDownward, ViewCarousel, ArrowDropUp, Email, YouTube} from '@mui/icons-material';
 
 const DownBar=()=>{
     return(
         <div className='downcomponent'>
-            <div className='extra_contents'><button>take a step forward join us now</button></div>
+            <div className='extra_contents'>
+	    <Email style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/>
+	    <button>Read Our Weekly News Letter</button>
+	    </div>
             <div className='menue_bottom'>
                 <ul className='menue_options' >
                     <li>home</li>
@@ -19,12 +22,12 @@ const DownBar=()=>{
             <div className='our_socials'>
               <>
               <button>Contact Us :</button>
-                <ul>
-                    <li><LinkedIn style={{fontSize:'70px',width:'40px', height:'40px',color:'white',backgroundColor:'#000020'}}/></li>
-                    <li><GitHub style={{fontSize:'70px',width:'40px', height:'40px',color:'white',backgroundColor:'#000020'}}/></li>
-                    <li><Instagram style={{fontSize:'70px',width:'40px', height:'40px',color:'white',backgroundColor:'#000020'}}/></li>
-                    <li><FacebookSharp style={{fontSize:'70px',width:'40px', height:'40px',color:'white',backgroundColor:'#000020'}}/></li>
-                   <li><Twitter style={{fontSize:'70px',width:'40px', height:'40px',color:'white',backgroundColor:'#000020'}}/></li>
+            <ul>
+            <li><YouTube style={{fontSize:'70px',width:'30px', height:'300px',color:'white',backgroundColor:'#000020'}}/></li>
+	    <li><Email style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
+            <li><LinkedIn style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
+	    <li><GitHub style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
+            <li><Twitter style={{fontSize:'70px',width:'30px', height:'300px',color:'white',backgroundColor:'#000020'}}/></li>
                 </ul>
               </>
                 <div className='goto_top'>
@@ -34,7 +37,6 @@ const DownBar=()=>{
             <div className='text'>
                 <p>copyright: tech_with_KING 2021</p>
                 <p>if you desire anything in life please learn to avoid toxic people because they
-                    don't feel good about themselves and they can make you doubt everything you stand for 
                 </p>
             </div>
             <div className='disclaimer'>

@@ -58,8 +58,6 @@ const Body=(props)=>{
 	    <div><div></div><h4>react</h4></div>
 	    <div><div></div><h4>react</h4></div>
 	    <div><div></div><h4>react</h4></div>
-	    <div><div></div><h4>react</h4></div>
-	    
 	    </div>
 	    
 

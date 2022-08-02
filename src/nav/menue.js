@@ -19,7 +19,7 @@ const Menue_Bar=(props)=>{
   }
     return(
 
-	    <div className='menuebar' style={toggle ? { height: '500px',position:"fixed",top:'0',width:'50vw' } : { height: '0',position:'fixed',width:'0' }}  >
+	    <div className='menuebar' style={toggle ? { height: '500px',position:"fixed",top:'0',width:'50vw',minWidth:"320px" } : { height: '0',position:'fixed',width:'0' }}  >
 	                        <Link className='li' to={'/'}> <HomeIcon style={{ marginRight: '5px' }} />Home</Link>
 				<Link className='li' to={'/projects'} >
 					<MenuBookTwoToneIcon style={{ marginRight: '5px' }} />Projects

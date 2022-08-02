@@ -1,10 +1,11 @@
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
     background: transparent;
     min-width: 340px;
     border-radius: 10px;
-    width: 70%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     height: inherit;
     padding: 10px;
   }
@@ -35,8 +36,8 @@
   .next {
     position: absolute;
     right: 0;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     background-color: rgb(15, 207, 159);
     display: flex;
     align-items: center;
@@ -48,8 +49,8 @@
   .prev {
     position: absolute;
     left: 0;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     background-color: rgb(15, 207, 159);
     display: flex;
     align-items: center;

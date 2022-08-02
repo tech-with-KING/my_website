@@ -1,4 +1,4 @@
-import { FacebookTwoTone, Instagram, InstallDesktopTwoTone, Twitter } from '@mui/icons-material';
+import { FacebookTwoTone, Instagram, Twitter, YouTube } from '@mui/icons-material';
 import React, { Component } from 'react';
 import "./cardbar.css"
 import img from './img/img.JPG'
@@ -18,21 +18,27 @@ class Card_componnt extends Component {
            {
             id:3,
             item:   <Instagram/>
-        },
+           },
+	    
         {
             id:4,
             item:  <FacebookTwoTone/>
+        },
+	            {
+            id:5,
+            item:  <YouTube/>
         }
-        
-          
         ]
         return (
         <>
-            <div class="card_to">
-                <img src={img} alt="John" style={{width:'100%'}}/>
-                <h1>I am kingsley</h1>
-                <p class="title">CEO & Founder, Example</p>
-                <p>Cosmic School</p>
+		<div className="card_to" style={{minHeight:'400px'}}>
+                <img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
+                <h2>I am kingsley</h2>
+                <p className="title">CEO & co-Founer, Algophile.com</p>
+				<p>
+		I am a react front end developer with three years of working experience
+	         I have collaborated on many team projects and have enjoyed working on all these projects
+		</p>
                 <div  className='ba'>
                 {
                     animae.map((anim,i)=>{
@@ -46,13 +52,52 @@ class Card_componnt extends Component {
                         )
                     })
                 }
+                </div>
+                <p></p>
+            </div>
+       </>
+        );
+    }
+}
+
+
+
+class Carded extends Component {
+    state = {  } 
+    render() { 
+        const animae=[
+            {
+                id:1,
+                item:<FacebookTwoTone/>,
+            },
+           {
+               id:2,
+               item: <Twitter/>,
+           },
+           {
+            id:3,
+            item:   <Instagram/>
+        },
+        {
+            id:4,
+            item:  <FacebookTwoTone/>
+        }
+        ]
+	
+        return (
+        <>
+		<div className="card_to" style={{minHeight:'400px'}}>
+                <img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
+                <h2>React/React-Native</h2>
+                <p className="title">CEO & co-Founer, Algophile.com</p>
+				<p>
+		I am a react front end developer with three years of working experience
+	         I have collaborated on many team projects and have enjoyed working on all these projects
+		</p>
+                <div  className='ba'>
 
                 </div>
-             
-               
-                
-               
-                <p><button>Contact</button></p>
+                <p></p>
             </div>
        </>
         );
@@ -60,3 +105,4 @@ class Card_componnt extends Component {
 }
  
 export default Card_componnt;
+export {Carded}

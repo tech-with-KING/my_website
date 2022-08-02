@@ -1,5 +1,5 @@
 .downcomponent{
-    height: 110vh;
+    height: 70vh;
     width: 100vw;
     background-color:#000020;
     display: flex;
@@ -10,30 +10,31 @@
 
 .extra_contents{
     width: 100%;
-    height: 300px;
+    height: 100px;
     background-color: white;
 }
 
 .disclaimer{
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;
+    font-weight: normal;
     justify-content: flex-end;
     width: 100%;
     background-color:transparent;
-    font-size: 15px;
+    font-size: 13px;
 }
 .disclaimer p{
-    height: 50px;
-    border: 4px solid white;
+    height: 35px;
+    border: 2px solid white;
     width: unset;
     width: 100%;
     display: flex;
+    font-weight: normal;
     justify-content: center;
     align-items: center;
-    font-weight: bolder;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 5px;
     margin: 5px;
     max-width: 700px;
     color:white;
@@ -44,19 +45,21 @@
     height: inherit; 
     display: flex;
     font-weight: normal;
-    padding: 20px;
+    padding: 0px;
     justify-content: space-evenly;
-    font-size: 18px;
+    font-size: 15px;
     width: 20%;
-    font-weight: bold;
     flex-direction: column;
 }
 .menue_bottom{
     display: flex;
-    height: 250px;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     align-items: center;
-    justify-content: center;
     box-sizing: border-box;
+    padding: 10px;
+    font-weight: bold;
     flex-direction: row;
 }
 .logo{
@@ -71,8 +74,6 @@
     text-decoration: none;
     display: flex;
     font-size: 30px;
-    justify-content: center;
-
     flex-direction: column;
 }
 
@@ -80,9 +81,8 @@
     display: flex;
     flex-direction: row;
     height: unset;
-    
     margin: 10px;
-    width: 500px;
+    width: 300px;
     padding: 5px;
     list-style: none;
 
@@ -96,11 +96,11 @@
     border: none;
 }
 .goto_top{
-    height: 50px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 35px;
     border-radius: 50%;
     background-color: rgb(15, 207, 159);
 }
@@ -113,8 +113,8 @@
 }
 
 .our_socials ul li{
-    height: 50px ;
-    width: 50px;
+    height: 40px ;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +128,7 @@
 @media (min-width: 650px){
 
     .downcomponent{
-        height: 110vh;
+        height: 70vh;
         width: 100vw;
         background-color:#000020;
         display: flex;
@@ -138,54 +138,50 @@
     
     .extra_contents{
         width: 100%;
-        height: 100%;
+        height: 50px;
         display: flex;
         justify-content: center;
         background-color: white;
     }
     
     .disclaimer{
-        height: 100px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        
         width: 100%;
         background-color:transparent;
         font-size: 20px;
     }
     .disclaimer p{
-        height: 50px;
-        border: 4px solid white;
+        height: 33px;
+        border: 2px solid white;
         width: unset;
-        font-size: 20px;
+        font-size: 17px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: bolder;
+        font-weight: normal;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 15px;
         margin-right: 40px;
         color:white;
     }
     .menue_options{
         list-style: none;
         color: white;
-        height: 200px; 
+        height: 140px; 
         display: flex;
         font-weight: normal;
-        padding: 20px;
-        justify-content: space-evenly;
         font-size: 18px;
-        width: 20%;
-        font-weight: bold;
+        width: 15%;
+        font-weight: normal;
         flex-direction: column;
     }
     .menue_bottom{
         display: flex;
-        height: 300px;
-        align-items: center;
-        justify-content: center;
+	margin-left: 20px;
+        height: 200px;
         box-sizing: border-box;
         flex-direction: row;
     }
@@ -195,7 +191,7 @@
     }
     .our_socials{
         height: 100px;
-        width: 100%;
+        width: 40%;
         color: white;
         text-decoration: none;
         display: flex;
@@ -209,9 +205,8 @@
         display: flex;
         flex-direction: row;
         height: unset;
-        
         margin: 10px;
-        width: 500px;
+        width: 300px;
         padding: 5px;
         list-style: none;
     

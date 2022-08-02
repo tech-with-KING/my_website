@@ -17,8 +17,8 @@ main (int argc, char **argv)
   [set add: [String str:*argv++]];
   [set
    do
-  :{
-    :each | printf ("hello, %s!\n",[each str]);
+  {
+          printf("hello world")
    }
   ];
   return 0;
