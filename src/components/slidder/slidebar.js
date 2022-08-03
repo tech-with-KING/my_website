@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Card_componnt,{Carded} from '../cardbar/cardbar';
-import {motion} from 'framer-motion'
+import {motion ,AnimatePresence} from 'framer-motion'
 import './slidebar.css'
 
 class Slide_Bar extends Component {
     constructor(props) {
         super(props);
     }
-    state = {  }
+    state = { index:0 }
     render() {
 	        const animae=[
             {
@@ -26,34 +26,45 @@ class Slide_Bar extends Component {
             id:4,
             item:  <Carded/>
         }
-        ]
+		]
+	const{index}=this.state
+ // setInterval(()=>{
+ //     if(this.state.index == 3){
+ // 	 this.setState({index:0})
+ //     }
+ //     else{
+ // 	 this.setState({index:this.state.index+1})
+ //     }
+ //     	console.log(this.state.index)
+ // },2000)
+	const manimante= ()=>{
+	      if(this.state.index == 3){
+	 this.setState({index:0})
+   }
+    else{
+  	 this.setState({index:this.state.index+1})
+ }
+	}
         return (  
           <div class="slideshow-container">   
-              
-                 <div class="mySlides">
-
-		        {
-                    animae.map((anim,i)=>{
-                        return(
-                            <motion.div href="#" 
-                                key={anim.id}
-                            initial={{opacity:0, translateX:-100}}
-                            animate={{opacity:1, translateX: 0}}
-                            transition={{duration:0.5,delay:i*0.5}}
-			    exitBeforeEnter={true}
-			    exit={{opacity:0, translateY:-100}}
-                            >{anim.item }</motion.div>
-                        )
-                    })
-                }
-		
-                
+                <div class="mySlides">
+		<AnimatePresence exitBeforeEnter>
+                            <motion.div 
+            key={index}
+	    	    exitBeforeEntry={true}
+            initial={{opacity:1, translateX:"-100vw"}}
+	    
+                            animate={{opacity:1.5, translateX:"0vw"}}
+            transition={{duration:1,ease:'easeOut'}}
+	    exit={{translateX:"100vw", transition:{duration:0.5}}}
+                            >{animae[index].item }</motion.div>
+		</AnimatePresence>
                  </div>
                 <div class="dot-container">
 		<a  ></a>
                     <span class="dot" ></span>
                     <span class="dot" ></span>
-                    <span class="dot"></span>
+                <span onClick={()=>{manimante()}}class="dot"></span>
 		
                 </div>
 
