@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Body from './body/body';
-import Articles from "./article_page/index"
+// import Articles from "./article_page/index"
+import Article from "./article_page/article_list"
 import Slide_Bar from './components/slidder/slidebar'
 import Top_Bar from './nav/topbar'
 import DownBar from './root/bottom_bar';
@@ -28,7 +29,7 @@ class App extends Component {
 			<Menue_Bar toggle={toggle}/>
 			<Routes>
 			<Route path="/" element={<><Slide_Bar/><Top_Bar toggle={toggle} set_toggle={set_toggle}/><Body /></>} />
-			<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle}/><Articles /></>} />
+			<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle}/><Article /></>} />
 			<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle}/><Projects /></>} />
 		    </Routes>
 		    <DownBar />
