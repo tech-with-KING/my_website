@@ -1,4 +1,3 @@
-
 .article{
     height: 400px;
     margin: 10px;
@@ -27,25 +26,25 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    width: 100vw;
+    width: 90vw;
 }
 .tech_stacks .t_s div div{
     background-color: blue;
-    width: 80px;
-    height: 80px;
+    width: 66px;
+    height: 66px;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .tech_stacks .t_s div {
     background-color:transparent ;
     width: unset;
-    margin: 5px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: inherit;
-    padding: 5px;
+    padding: 0px;
 }
 .img{
     background-color: blue;
@@ -129,7 +128,7 @@
     width: 100vw;
 }
 .tech_stacks .t_s{
-    background-color: white;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -146,6 +145,7 @@
 }
 .tech_stacks .t_s div {
     background-color:transparent ;
+    
     width: unset;
     margin: 5px;
     display: flex;
