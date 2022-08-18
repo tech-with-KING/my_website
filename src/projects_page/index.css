@@ -3,23 +3,28 @@
     height: inherit;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 100vw;
     box-sizing: border-box;
 }
+
+
 .project_grid{
+    background-color: grey;
+    width: 90vw;
     --gap:10px;
-    --num-cols:2;
+    --num-cols:3;
     --row-height:150px;
     box-sizing: border-box;
     padding: var(--gap);
-    width: 90vw;
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap); 
 }
+
 .project_grid div
 {
     width: 100%;
@@ -42,13 +47,13 @@
     align-items: center;
     justify-content: center;
     height: inherit;
+    padding: 10px;
 
 
 }
 .project_grid{
     background-color: grey;
-    width: 80vw;
-    
+    width: 70vw;
     --gap:10px;
     --num-cols:3;
     --row-height:220px;
