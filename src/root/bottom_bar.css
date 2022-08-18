@@ -13,7 +13,13 @@
     height: 100px;
     background-color: white;
 }
-
+.text p{
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
 .disclaimer{
     height: 70px;
     display: flex;
@@ -66,6 +72,14 @@
     height: 100px ;
     width: 200px;
 }
+.modals{
+    position: fixed;
+    top:85%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 99999999;
+    left: 85%;
+}
 .our_socials{
     height: unset;
     padding: 5px;
@@ -96,13 +110,24 @@
     border: none;
 }
 .goto_top{
-    height: 35px;
+    height: 40px;
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
+    width: 40px;
     border-radius: 50%;
     background-color: rgb(15, 207, 159);
+}
+.message{
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 50%;
+    background-color:#000020;
 }
 .extra_contents button{
     background-color: rgb(15, 207, 159);
@@ -216,15 +241,15 @@
         background-color: transparent;
         font-size: 18px;
         color: white;
-        width: 200px;
+        width: 300px;
         border: none;
     }
     .goto_top{
-        height: 50px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
+        width: 40px;
         border-radius: 50%;
         background-color: rgb(15, 207, 159);
     }

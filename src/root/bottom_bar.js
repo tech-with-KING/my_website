@@ -1,7 +1,7 @@
 import React from 'react';
 import './bottom_bar.css'
 import cosmic from '../img/s_tile.svg'
-import {FacebookSharp,GitHub, Twitter, LinkedIn, Instagram, ArrowDownward, ViewCarousel, ArrowDropUp, Email, YouTube} from '@mui/icons-material';
+import {FacebookSharp,GitHub, Twitter, LinkedIn, Instagram, ArrowDownward, ViewCarousel, ArrowDropUp, Email, YouTube, Message} from '@mui/icons-material';
 
 const DownBar=()=>{
     return(
@@ -23,20 +23,27 @@ const DownBar=()=>{
               <>
               <button>Contact Us :</button>
             <ul>
-            <li><YouTube style={{fontSize:'70px',width:'30px', height:'300px',color:'white',backgroundColor:'#000020'}}/></li>
+            <li><YouTube style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
 	    <li><Email style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
             <li><LinkedIn style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
 	    <li><GitHub style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
-            <li><Twitter style={{fontSize:'70px',width:'30px', height:'300px',color:'white',backgroundColor:'#000020'}}/></li>
+            <li><Twitter style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/></li>
                 </ul>
-              </>
-                <div className='goto_top'>
-                    <ArrowDropUp style={{color:'#000020',fontSize:'60px'}}/>
-                </div>
+            </>
+	    <div  className='modals'>
+            <div className='goto_top'>
+            <ArrowDropUp style={{color:'#000020',fontSize:'60px',margin:"5px"}}/>
+        </div>
+	    <div className='message'>
+	    <Message  style={{fontSize:'30px',color:"rgb(15, 207, 159)"}}/>
+        </div>
+	    </div>
             </div>
             <div className='text'>
-                <p>copyright: tech_with_KING 2021</p>
-                <p>if you desire anything in life please learn to avoid toxic people because they
+            <p>copyright: Algophile.com 2021</p>
+	    <p>Email: kingsley@algophile.com
+	    </p>
+                <p>This website was made responsively  with love
                 </p>
             </div>
             <div className='disclaimer'>
