@@ -46,9 +46,7 @@
 }
 .menuebar .li:hover {
     font-weight: bolder;
-    background-color:white;
-    color: black;
-    
+    background-color: white;
 } 
  
  .menuebar .li{
@@ -56,8 +54,9 @@
     transition: 0.4s ease;
     text-decoration: none;
     color: #000020;
-    border-bottom: 1px solid #000020;
+    border-bottom: 2px solid #000020;
     display:flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     padding-left: 20px;
@@ -71,8 +70,8 @@
     line-height: 60px;
     list-style: none;
     z-index: 9999;
-    border-bottom: 1px solid #000020;
     overflow-y: scroll;
+    align-items: center;
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -90,9 +89,10 @@
     background-color: aqua;
 }
 .tol{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    color: #000020;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }
 @media (min-width: 650px){
 
