@@ -1,3 +1,4 @@
+
 .article{
     height: 400px;
     margin: 10px;
@@ -28,10 +29,28 @@
     height: 200px;
     width: 90vw;
 }
+.square{
+
+}
+.square img {
+    float: right;
+    shape-outside: circle(25%);
+    
+    }
+  
+ .square p {
+      text-align: justify;
+      font-size: 25px;
+    }
+
+
+    
 .tech_stacks .t_s div div{
-    background-color: blue;
-    width: 66px;
-    height: 66px;
+    width: 56px;
+    background-image: url("../img/react.svg");
+    background-position: center;
+    background-size: cover;
+    height: 56px;
     border-radius: 50%;
     margin-left: 0px;
 }
