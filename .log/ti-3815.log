@@ -160,3 +160,4 @@
     {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
 [15:27:30.875] Response has been sent.
 [15:27:30.875] No new typings were requested as a result of typings discovery
+[16:31:57.893] Parent process has exited, shutting down...
