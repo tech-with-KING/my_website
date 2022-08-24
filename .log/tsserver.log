@@ -1273,3 +1273,6 @@ Info 1265 [06:19:57.082] Starting updateGraphWorker: Project: /dev/null/inferred
 Info 1266 [06:19:57.124] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 67 structureChanged: false structureIsReused:: Completely Elapsed: 41.09812100045383ms
 Info 1267 [06:19:57.124] Different program with same set of files
 Info 1268 [06:19:57.234] Format host information updated
+Info 1269 [06:22:40.131] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1270 [06:22:40.185] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 68 structureChanged: false structureIsReused:: Completely Elapsed: 54.478555999696255ms
+Info 1271 [06:22:40.186] Different program with same set of files
