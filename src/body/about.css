@@ -1,0 +1,31 @@
+.left-side {
+    float: right;
+    margin-right: 30px;
+    margin: 20px;
+    shape-outside: circle();
+    shape-outside: margin-box;
+    shape-rendering: crispEdges;
+    shape-margin: 20px;
+    margin-left: -50px;
+    width: 200px;
+}
+
+.right-side {
+  float: right;
+  width: 20%;
+
+}
+
+.content, header {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+}
+

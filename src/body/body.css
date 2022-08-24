@@ -29,22 +29,19 @@
     height: 200px;
     width: 90vw;
 }
-.square{
-
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.square img {
-    float: right;
-    shape-outside: circle(25%);
-    
-    }
-  
+
  .square p {
       text-align: justify;
-      font-size: 25px;
+      font-size: 20px;
     }
 
 
-    
+
 .tech_stacks .t_s div div{
     width: 56px;
     background-image: url("../img/react.svg");
@@ -94,7 +91,7 @@
     background-color:white;
     padding: 20px;
     box-sizing: border-box;
-} 
+}
 .line{
     width: 95%;
     margin-top: 40px;
@@ -110,7 +107,7 @@
     flex-direction: column;
     box-sizing: border-box;
 }
- 
+
 .hots{
     height: 50vh;
     width: 100vw;
@@ -164,7 +161,7 @@
 }
 .tech_stacks .t_s div {
     background-color:transparent ;
-    
+
     width: unset;
     margin: 5px;
     display: flex;
@@ -183,5 +180,5 @@
         flex-direction: row;
     }
 
- 
+
 }

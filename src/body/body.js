@@ -8,6 +8,7 @@ import Carded_Two from '../components/blogcard/bob2';
 import img from "./sc/img-removebg-preview.png"
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
+import About from "./about"
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
@@ -93,16 +94,10 @@ const Body=(props)=>{
 
                 </div>
 
-	    <section className='square'>
-	    <h1>About Me</h1>
-	    	    <img style={{width:'100px'}} src={img} alt="my picture"></img>
-	    <p>my name is Kingsley francis Okpo I am an undergraduate of the university of Lagos
-	I am currently studying in the field of pure mathematics I hope someday to hold a fields medal
-	    in mathematics or if age does not permit me i would love to go for the Alan turing award in computer
-	science for my utiliZation of mathematical knowledge to the field of computer science in solving one of the
-	biggest problems in the field .The problem of quantum computing and artificial inteligence in the light of thes i want to give my best to study and progress so as to get to the places i want to get to in life ang find the happiness i desire and also to have impact in the lives of my family member ..I was not born with a silver spoon but i have seen golden spoons manufactured in the market and i know the can be bought ..so I plan to buy Golden spoons for my children</p>
 
-	    </section>
+            <>
+            <About />
+            </>
 	
 	    
                 <div className='line'></div>
