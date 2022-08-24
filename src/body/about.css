@@ -1,9 +1,10 @@
 .content{
-    padding: 70px;
+    padding: 10px;
     width: 90vw;
     background-color: #000020;
 }
 .left-side {
+    width: 300px;
     float: right;
     margin: 0px;
     shape-margin: 0px;
@@ -15,7 +16,9 @@
 .content img {
   max-width: 100%;
 }
-p{
+.content p{
+    font-size: 15px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;
     color: aquamarine;
