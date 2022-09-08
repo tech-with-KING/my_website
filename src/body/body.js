@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './body.css'
 import { useState,useEffect } from 'react';
@@ -33,17 +32,27 @@ const Body=(props)=>{
       {
           id:1,
           text:"this is going to be some of the best articles yuo will ever get to read",
-          img:'../img/react.svg'
+          img:'/img/pythondev1.jpeg',
+	  name:'python/django'
+	  
       },
       {
         id:2,
         text:"this is going to be some of the best articles yuo will ever get to read",
-        img:'studio'
+          img:'/img/bn.png',
+	  name:'Reac/js'
     },
     {
         id:3,
         text:"this is going to be some of the best articles yuo will ever get to read",
-         img:'studio'
+        img:'/img/cforme.jpeg',
+	name:'C'
+    },
+      {
+        id:4,
+        text:"this is going to be some of the best articles yuo will ever get to read",
+        img:'/img/git.png',
+	name:'git'
     }
   ]
 
@@ -56,10 +65,28 @@ const Body=(props)=>{
 	    <div className='tech_stacks'>
 	    <h3>TECH-STACKS</h3>
 	    <div className='t_s'>
-	    <div><div></div><h4>react</h4></div>
-	    <div><div></div><h4>react</h4></div>
-	    <div><div></div><h4>react</h4></div>
-	    <div><div></div><h4>react</h4></div>
+	    {datas.map((dat)=>{
+		return(
+		    	    <div>
+		
+	    
+	    <div className='t_c' style={{backgroundImage:`url(${dat.img})`}}></div>
+	    	    <p> 20%</p>
+            <div className='t_line'>
+         	    <div></div>
+			</div>
+				<h4>{dat.name}</h4>
+			</div>
+		)
+	    })}
+
+
+
+
+
+
+
+
 	    </div>
 	    
 
@@ -83,7 +110,7 @@ const Body=(props)=>{
 			         initial={{translateX:"-100vw"}}
 				animate={project_view?{opacity:1, translateX: 0}:{}}
 					transition= {{duration:1,delay:i*1.5}} > 
-                                <Carded /> 
+                                <Carded img={data.img}/> 
                             </motion.div>
                         )
                     })
@@ -120,7 +147,7 @@ const Body=(props)=>{
 			         initial={{opacity:0, translateX:-100}}
 				animate={article_view?{opacity:1, translateX: 0}:{}}
 				transition={{duration:1,delay:i*1}} >
-                                <Carded_Two />
+                                <Carded_Two img={data.img} />
                             </motion.div>
                         
                         )
