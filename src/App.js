@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Body from './body/body';
-// import Articles from "./article_page/index"
+import Modal from './components/modalbox/modalbox'
+import Articles from "./article_page/index"
 import Article from "./article_page/article_list"
 import Slide_Bar from './components/slidder/slidebar'
 import Top_Bar from './nav/topbar'
@@ -40,7 +41,9 @@ class App extends Component {
 					<Routes>
 						<Route path="/" element={<><Slide_Bar /><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
-						<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
+		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
+		<Route path="/modal" element={<><Top_Bar toggle={toggle} set_toggle={set_tofggle} /><Modal/></>} />
+						<Route path="/articles/one" element={<><Top_Bar toggfle={toggle} set_toggle={set_toggle} /><Articles /></>} />
 					</Routes>
 					<DownBar />
 				</Router>

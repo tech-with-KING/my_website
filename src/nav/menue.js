@@ -26,7 +26,7 @@ const Menue_Bar=(props)=>{
 				</Link>
 	    <Link className='li' to={'/articles'} ><LibraryBooksIcon style={{ marginRight: '5px' }} />Articles</Link>
 				<Link to={""} className='li' ><InfoTwoToneIcon style={{ marginRight: '5px' }} />About</Link>
-	    <p className='tol'>We are :Piooneers and all we need is a course to die for  </p>
+
 
 	    </div>
 	    
