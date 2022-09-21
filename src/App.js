@@ -42,7 +42,7 @@ class App extends Component {
 						<Route path="/" element={<><Slide_Bar /><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
 		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
-		<Route path="/modal" element={<><Top_Bar toggle={toggle} set_toggle={set_tofggle} /><Modal/></>} />
+
 						<Route path="/articles/one" element={<><Top_Bar toggfle={toggle} set_toggle={set_toggle} /><Articles /></>} />
 					</Routes>
 					<DownBar />
