@@ -7,7 +7,6 @@ const DownBar=()=>{
     return(
         <div className='downcomponent'>
             <div className='extra_contents'>
-	    <Email style={{fontSize:'70px',width:'30px', height:'30px',color:'white',backgroundColor:'#000020'}}/>
 	    <button>Read Our Weekly News Letter</button>
 	    </div>
             <div className='menue_bottom'>
@@ -47,7 +46,9 @@ const DownBar=()=>{
                 </p>
             </div>
             <div className='disclaimer'>
-                <p>I Do Not Sell Your Information For Money</p>
+            <p>Client data protection is a core value.
+	
+	</p>
             </div>
                 
         </div>
