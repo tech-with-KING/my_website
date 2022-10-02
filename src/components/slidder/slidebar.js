@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card_componnt,{Carded} from '../cardbar/cardbar';
 import {motion ,AnimatePresence} from 'framer-motion'
 import './slidebar.css'
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 class Slide_Bar extends Component {
     constructor(props) {
@@ -37,7 +38,19 @@ class Slide_Bar extends Component {
  //     }
  //     	console.log(this.state.index)
  // },2000)
-	const manimante= ()=>{
+	const back_animate= ()=>{
+	      if(this.state.index == 3){
+	 this.setState({index:0})
+   }
+    else{
+  	 this.setState({index:this.state.index+1})
+ }
+	}
+
+
+
+
+		const forward_animate= ()=>{
 	      if(this.state.index == 3){
 	 this.setState({index:0})
    }
@@ -62,9 +75,13 @@ class Slide_Bar extends Component {
                  </div>
                 <div class="dot-container">
 		<a  ></a>
-                    <span class="dot" ></span>
-                    <span class="dot" ></span>
-                <span onClick={()=>{manimante()}}class="dot"></span>
+		
+		<ArrowBack onClick={()=>{back_animate()}}/>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot"></span>
+		<ArrowForward onClick={()=>{forward_animate()}} />
+
 		
                 </div>
 

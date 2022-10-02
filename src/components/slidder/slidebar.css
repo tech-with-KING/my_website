@@ -1,15 +1,20 @@
 /* Slideshow container */
 .slideshow-container {
-    background: transparent;
+    background-color: black;
     min-width: 340px;
-    border-radius: 10px;
     width: 100vw;
     display: flex;
     flex-direction: column;
     height: inherit;
     padding: 10px;
   }
-  
+.menu_cancel_icon_container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 8%;
+}  
   /* Slides */
   .mySlides {
     padding: 5px;

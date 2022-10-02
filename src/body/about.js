@@ -13,10 +13,9 @@ const About=(props)=>{
     return(
 	   
 <div className="content">
-            <img className="left-side" src={imgr} alt="Any Image"></img>
+            // <img className="left-side" src={imgr} alt="Any Image"></img>
             <h1 style={{color:"white"}}> ABOUT ME</h1>
 	    <p>
-	    
 	    </p>
 	    
  

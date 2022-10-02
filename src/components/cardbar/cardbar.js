@@ -35,9 +35,10 @@ class Card_componnt extends Component {
                 <img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
                 <h2>I am kingsley</h2>
                 <p className="title">CEO & co-Founer, Algophile.com</p>
-				<p>
-		I am a react front end developer with three years of working experience
-	         I have collaborated on many team projects and have enjoyed working on all these projects
+				<p className='about_short_text'>
+		 And I’ve spent the last three years learning everything there is to know about the Tech industry – from basic UI designs with Reactjs to To building Restful Apis with Django and Nodejs. I’m currently applying this knowledge in my role as a full-stack Developer at Algophile.com a coming of Age AI tak automation systems
+        I’m a solution-oriented Full-Stack Web Developer  with a liking for Building web interfaces ,Solving mathematical problems ,Technical Writing, Music, Basket-ball  and Learning.. See some of my very interesting project ideas and article below 
+
 		</p>
                 <div  className='ba'>
                 {

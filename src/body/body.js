@@ -107,7 +107,7 @@ const Body=(props)=>{
                     datas.map((data,i)=>{
                         return(
                             <motion.div key={data.id}
-			    initial={{opacity:0,size:0.5,transform:'scale(0)'}}
+			    initial={{opacity:0,transform:'scale(0)'}}
 			    animate={project_view?{opacity:1, transform:'scale(1)'}:{}}
 					transition= {{duration:1,delay:i*1.5}} > 
                                 <Carded img={data.img}/> 

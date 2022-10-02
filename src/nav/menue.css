@@ -1,3 +1,4 @@
+
 .header{
     min-height: 70vh;
     width: 100vw;
@@ -69,7 +70,7 @@
     width: 100vw;
     line-height: 60px;
     list-style: none;
-    z-index: 9999;
+    z-index: 99999999999999;
     overflow-y: scroll;
     align-items: center;
     display: flex;
