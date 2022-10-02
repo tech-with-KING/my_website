@@ -76,6 +76,9 @@
     text-align: center;
     padding: 20px;
     background:transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* The dots/bullets/indicators */

@@ -1,27 +1,35 @@
 .card_to {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    max-width: 700px;
     width: 80%;
     min-width: 280px;
     margin: auto;
     margin-top: 25px;
     height: inherit;
     border-radius: 10px;
+    color:grey;
     text-align: center;
 }
 .about_short_text{
-    color:white;
+    font-size: 13px;
+}
+about_heading{
+    color:grey;
 }
 img{
     margin-bottom: 25px;
-      object-fit: cover;
-      position: relative;
-      left: 20%;
-      margin: 5px;
+    object-fit: cover;
+    float: right;
+    position: relative;
+    shape-outside: circle(10);
+    shape-margin:-20px;
+    margin-right:20px;
+    margin: 5px;
   }
   .title {
     color: grey;
     font-size: 18px;
+    margin: 5px;
   }
   
   button {
@@ -48,7 +56,6 @@ img{
     text-decoration: none;
     font-size: 40px;
     width: 40px;
-    color: white;
     margin: 4px;
   }
   

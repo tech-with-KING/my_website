@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Card_componnt,{Carded} from '../cardbar/cardbar';
 import {motion ,AnimatePresence} from 'framer-motion'
 import './slidebar.css'
-import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { ArrowBack, ArrowForward, ChevronLeft, ChevronRight, GitHub, LinkedIn, MailOutline } from '@mui/icons-material';
 
 class Slide_Bar extends Component {
     constructor(props) {
@@ -73,14 +73,13 @@ class Slide_Bar extends Component {
                             >{animae[index].item }</motion.div>
 		</AnimatePresence>
                  </div>
-                <div class="dot-container">
-		<a  ></a>
-		
-		<ArrowBack onClick={()=>{back_animate()}}/>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-                <span class="dot"></span>
-		<ArrowForward onClick={()=>{forward_animate()}} />
+                <div className='dot-container'>
+		<ChevronLeft className='chevron_left' onClick={()=>{back_animate()}} style={{color:'grey',fontSize:'40px',fontWeight:'bold'}}/>
+                <span className='dot' ></span>
+                <span className='dot' ></span>
+
+                <span className='dot'></span>
+		<ChevronRight className='chevron_left' onClick={()=>{forward_animate()}} style={{color:'grey',fontSize:'40px',fontWeight:'bold'}} />
 
 		
                 </div>
