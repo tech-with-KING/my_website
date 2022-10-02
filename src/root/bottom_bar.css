@@ -78,8 +78,10 @@
     flex-direction: row;
 }
 .logo{
-    height: 100px ;
-    width: 200px;
+    margin-left: 80px;
+    height:150px;
+    width:150px;
+
 }
 .modals{
     position: fixed;
@@ -128,7 +130,6 @@
     justify-content: center;
     width: 40px;
     border-radius: 50%;
-    background-color: rgb(15, 207, 159);
 }
 .message{
     height: 40px;
