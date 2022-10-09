@@ -74,13 +74,12 @@ class Slide_Bar extends Component {
 		</AnimatePresence>
                  </div>
                 <div className='dot-container'>
-		<ChevronLeft className='chevron_left' onClick={()=>{back_animate()}} style={{color:'grey',fontSize:'40px',fontWeight:'bold'}}/>
+		<ChevronLeft className='chevron_left' onClick={()=>{back_animate()}} style={{color:'grey',fontSize:'30px',fontWeight:'bold'}}/>
                 <span className='dot' ></span>
                 <span className='dot' ></span>
 
                 <span className='dot'></span>
-		<ChevronRight className='chevron_left' onClick={()=>{forward_animate()}} style={{color:'grey',fontSize:'40px',fontWeight:'bold'}} />
-
+		<ChevronRight className='chevron_left' onClick={()=>{forward_animate()}} style={{color:'grey',fontSize:'30px',fontWeight:'bold'}} />
 		
                 </div>
 

@@ -27,4 +27,14 @@
     align-items: center;
     flex-direction: row;
     width: 50px;
+
+
     }
+@media (min-width: 650px){
+    .navbar{
+	display: none;
+    }
+    .top_bar{
+	display: none;
+    }
+}

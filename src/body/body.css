@@ -20,7 +20,6 @@
     width: 100vw;
 }
 .tech_stacks .t_s{
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,7 +31,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000020;
 }
 
  .square p {
@@ -42,25 +40,27 @@
 
 
 .tech_stacks .t_s div .t_c{
-    width: 60px;
+    width: 40px;
     background-position: center;
     background-size: cover;
-    height: 60px;
+    height: 40px;
     border-radius: 50%;
     margin-left: 0px;
 }
 
 .tech_stacks .t_s div .t_line{
     width: 70px;
-    background-color: yellow;
     background-position: center;
     background-size: cover;
-    height: 8px;
+    height: 5px;
     border-radius: 5px;
     margin-left: 0px;
+    color: gray;
 }
 .tech_stacks .t_s div {
-    background-color:transparent ;
+    color: gray;
+    font-size: 12px;
+    font-weight: lighter;
     width: unset;
     margin: 0px;
     margin-left: 5px;
@@ -73,7 +73,6 @@
     padding: 0px;
 }
 .img{
-    background-color: blue;
     border-radius: 10px  10px 0px 0px;
     height: 55%;
     width: 100%;
@@ -87,7 +86,6 @@
     width: 100vw;
     overflow-x: hidden;
     flex-direction:column;
-    background-color:#000020;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -98,7 +96,6 @@
     justify-content: center;
     width: 100vw;
     flex-direction:column;
-    background-color:white;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -121,20 +118,20 @@
 .hots{
     height: 50vh;
     width: 100vw;
-    background-image: url('./sc/undraw_programmer_re_owql.svg');
+    background-image: url('/public/img/pexels-mo-eid-11798029-removebg-preview.png');
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
     background-size: contain;
 
 }
-.hot h1{
-  color: #000020;
+.h_one, .hot h1{
+  color: gray;
 }
 .hot{
     height: 50vh;
     width: 100vw;
-    background-image: url('./sc/app_development_SVG.svg');
+    background-image: url('/public/img/pexels-mo-eid-11798029-removebg-preview.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,7 +151,6 @@
     width: 100vw;
 }
 .tech_stacks .t_s{
-    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -169,8 +165,6 @@
     margin-left: 20px;
 }
 .tech_stacks .t_s div {
-    background-color:transparent ;
-
     width: unset;
     margin: 5px;
     display: flex;

@@ -19,7 +19,7 @@ class Carded extends Component {
                     </div>
                     <div class="card__body_">
                 <span class="tag tag-red" >react</span>
-                    <h4>Race to your heart content</h4>
+                    <h4>Making Emacs Into An IDE</h4>
                     <p style={{margin:'5px'}}>Loestiae ihil! At ea atque quidem!</p>
                     </div>
                     <div class="card__footer">

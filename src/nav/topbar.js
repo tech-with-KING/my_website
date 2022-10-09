@@ -12,7 +12,7 @@ const Top_bar=(props)=>{
     const set_style = ()=>
        {
 	   const style = { fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in",color:'grey' }
-	   if(!toggle){return(<MenuIcon style = {style} />)}else{return( <ClearTwoToneIcon style = {style} />)}
+	   if(!toggle){return(<MenuIcon style = {style} />)}else{null}
        	}
     return(
 	    <div className='top_bar'>

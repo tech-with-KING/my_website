@@ -33,7 +33,7 @@ const Body=(props)=>{
           id:1,
           text:"this is going to be some of the best articles yuo will ever get to read",
           img:'/img/pythondev1.jpeg',
-	  name:'python/django'
+	  name:'python'
 	  
       },
       {
@@ -71,11 +71,7 @@ const Body=(props)=>{
 		
 	    
 	    <div className='t_c' style={{backgroundImage:`url(${dat.img})`}}></div>
-	    	    <p> 20%</p>
-            <div className='t_line'>
-         	    <div></div>
-			</div>
-				<h4>{dat.name}</h4>
+				<p>{dat.name}</p>
 			</div>
 		)
 	    })}
@@ -134,7 +130,7 @@ const Body=(props)=>{
             <motion.div  className='hots' >
 
 	
-             <h1>Articles</h1>
+             <h1 className='h_one'>Articles</h1>
 
             </motion.div>
             

@@ -2,7 +2,6 @@ import {  Instagram, Twitter, YouTube } from '@mui/icons-material';
 import { ArrowBack, ArrowForward, ChevronLeft, ChevronRight, GitHub, LinkedIn, MailOutline } from '@mui/icons-material';
 import React, { Component } from 'react';
 import "./cardbar.css"
-import img from './img/img.JPG'
 import {motion} from 'framer-motion'
 class Card_componnt extends Component {
     state = {  } 
@@ -42,7 +41,7 @@ class Card_componnt extends Component {
         return (
         <>
 		<div className="card_to" style={{minHeight:'400px'}}>
-                <img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
+                <img src='/img/face3-removebg-preview.png' alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
                 <h3 className="about_heading">Hi &#x1F44B;&#x1F600;  I am Kingley</h3>
                 <p className="title">A Full-Stack Developer</p>
 				<p className='about_short_text'>
@@ -79,7 +78,6 @@ class Carded extends Component {
         const animae=[
             {
                 id:1,
-                item:<FacebookTwoTone/>,
             },
            {
                id:2,
@@ -91,24 +89,35 @@ class Carded extends Component {
         },
         {
             id:4,
-            item:  <FacebookTwoTone/>
         }
         ]
 	
         return (
         <>
-		<div className="card_to" style={{minHeight:'400px'}}>
-                <img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
-                <h2>React/React-Native</h2>
-                <p className="title">CEO & co-Founer, Algophile.com</p>
-				<p>
-		I am a react front end developer with three years of working experience
-	         I have collaborated on many team projects and have enjoyed working on all these projects
+		<div className="card_to_alt" style={{minHeight:'400px'}}>
+
+		<img src={img} alt="John" style={{width:'130px',height:'130px',borderRadius:'0%',}}/>
+                <h3 className="about_heading">Hi &#x1F44B;&#x1F600;  I am Kingley</h3>
+                <p className="title">A Full-Stack Developer</p>
+				<p className='about_short_text'>
+		And I’ve spent the last three years learning and building everything  there is to Web and
+	    Software Designs – from Great
+
 		</p>
                 <div  className='ba'>
-
+                {
+                    animae.map((anim,i)=>{
+                        return(
+                            <motion.div href="#" className='div'
+                                key={anim.id}
+                                initial={{opacity:0, translateX:-40}}
+                                animate={{opacity:1, translateX: 0}}
+                                transition={{duration:0.5,delay:i*0.5}}
+                            >{anim.item }</motion.div>
+                        )
+                    })
+                }
                 </div>
-                <p></p>
             </div>
        </>
         );

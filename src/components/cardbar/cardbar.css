@@ -32,7 +32,21 @@ img{
     font-size: 18px;
     margin: 5px;
   }
-  
+  /* card to  */
+
+  .card_to_alt{
+      border: 2px solid grey;
+      color: gray;
+  }
+  .card_to_alt img{
+      position: absolute;
+    margin-bottom: 25px;
+    object-fit: cover;
+    float: right;
+    position: relative;
+    shape-outside: square(10);
+    shape-margin:-20px;
+  }
   button {
     margin-top: 5px;
     border: none;
