@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import Card_componnt,{Carded} from '../cardbar/cardbar';
 import {motion ,AnimatePresence} from 'framer-motion'
@@ -67,7 +68,7 @@ class Slide_Bar extends Component {
 	    	    exitBeforeEntry={true}
             initial={{opacity:1, translateX:"-100vw"}}
 	    
-                            animate={{opacity:1.5, translateX:"0vw"}}
+                            animate={{opacity:1.5, translateX:"-10vw"}}
             transition={{duration:1,ease:'easeOut'}}
 	    exit={{translateX:"100vw", transition:{duration:0.5}}}
                             >{animae[index].item }</motion.div>

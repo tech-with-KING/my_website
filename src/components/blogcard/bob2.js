@@ -18,11 +18,8 @@ class Carded_Two extends Component {
                 </div>
                 <div class="card__body">
                     <span class="tag tag-red">react</span>
-                    <h4>Race to your heart content</h4>
-                    <p style={{margin:'5px'}}>to be loved by a man can sometimes be the 
-                    the most challenging part of a womans life that is why ladies need to make 
-                    effort to make themselves presentable for relationships
-                    </p>
+                    <h4>Article Name</h4>
+
                     <div class="card__footer">
                     <div class="user">
                         <img src={bob}  alt="user__image" class="user__image"/>
