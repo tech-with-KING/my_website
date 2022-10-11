@@ -64,7 +64,7 @@ const Menue_Bar=(props)=>{
     const menu_size = ()=>{
 	return(
 	    toggle ?
-		{ height: '60vh',position:"fixed",top:'0',width:'100vw',minWidth:"320px" } :
+		{ height: '80vh',position:"fixed",top:'0',width:'100vw',minWidth:"320px" } :
 	    { height: '0',position:'fixed',width:'100vw' }
 	)
     }

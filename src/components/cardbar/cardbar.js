@@ -41,7 +41,7 @@ class Card_componnt extends Component {
         return (
         <>
 		<div className="card_to" style={{minHeight:'400px'}}>
-                <img src='/img/face3-removebg-preview.png' alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
+                <img src='/img/faceicon' alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
                 <h3 className="about_heading">Hi &#x1F44B;&#x1F600;  I am Kingley</h3>
                 <p className="title">A Full-Stack Developer</p>
 				<p className='about_short_text'>

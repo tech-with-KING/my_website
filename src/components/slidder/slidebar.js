@@ -80,6 +80,7 @@ class Slide_Bar extends Component {
 
                 <span className='dot'></span>
 		<ChevronRight className='chevron_left' onClick={()=>{forward_animate()}} style={{color:'grey',fontSize:'30px',fontWeight:'bold'}} />
+
 		
                 </div>
 
