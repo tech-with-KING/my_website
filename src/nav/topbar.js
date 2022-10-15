@@ -28,13 +28,6 @@ const Top_bar=(props)=>{
             <div className={`hamburger ${set_style()}`} onClick={()=>{make_menue_toggle()}}>
                     <div className="bar"></div>
                 </div>
-                <ul>
-               <li><a href="#hero" data-myafter="Home">Home</a></li>
-               <li><a href="#services" data-myafter="Services">Services</a></li>
-               <li><a href="#projects" data-myafter="Project">Project</a></li>
-               <li><a href="#about" data-myafter="About">About</a></li>
-               <li><a href="#contact" data-myafter="Contact">Contact</a></li>
-                </ul>
             </div>
         </div>
 
