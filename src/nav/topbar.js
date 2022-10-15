@@ -11,23 +11,36 @@ const Top_bar=(props)=>{
     }
     const set_style = ()=>
        {
-	   const style = { fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in",color:'grey' }
-	   if(!toggle){return(<MenuIcon style = {style} />)}else{null}
+	   if(toggle){
+	       return('activity')
+	   }else null;
        	}
     return(
-	    <div className='top_bar'>
+	<>
+	    <section id="header">
+    <div className="header container">
 
-	    <div className='navbar' >
-	    <div className='ico'onClick={()=>{make_menue_toggle()}} >
-	    {set_style()}
+        <div className="nav-bar">
+            <div className="brand">
+                <a href="#hero"><h1><span>K</span>ingsley <span>F</span>rancis</h1></a>
+            </div>
+            <div className="nav-list">
+            <div className={`hamburger ${set_style()}`} onClick={()=>{make_menue_toggle()}}>
+                    <div className="bar"></div>
+                </div>
+                <ul>
+               <li><a href="#hero" data-myafter="Home">Home</a></li>
+               <li><a href="#services" data-myafter="Services">Services</a></li>
+               <li><a href="#projects" data-myafter="Project">Project</a></li>
+               <li><a href="#about" data-myafter="About">About</a></li>
+               <li><a href="#contact" data-myafter="Contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-	    <h2>Imagine Tech</h2>
-	    <div className='light'>
-	        <DarkModeIcon />
-	    </div>
-	    </div>
 
-	</div>     
+    </div>
+	    </section>
+	    </>
     )
 }
 export default Top_bar;

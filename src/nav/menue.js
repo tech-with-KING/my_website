@@ -24,17 +24,10 @@ const Menue_Bar=(props)=>{
 	height:'40px',
 	objectFit:'contain'
     }
-    const coloring={
-      darkbg:'black',
-      lightbg:'white',
-      darkcl:'black',
-      lightcl:'white',
-      darkbd:'',
-    }
     const resources =[
 	{
 	    img:null,
-	    link:'/',
+	    link:'#projects',
 	    name:'Home',
 	    classname:'li',
 	    id:1

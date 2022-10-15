@@ -1,6 +1,6 @@
 import React from 'react';
 import imgr from "./sc/mo_prev_ui.png"
-import './about.css'
+import "./about.css"
 const About=(props)=>{
     const {toggle}=props
     const coloring={
@@ -11,16 +11,25 @@ const About=(props)=>{
       darkbd:'',
   }
     return(
-	   
-<div className="content">
-            {/*<img className="left-side" src={imgr} alt="Any Image"></img>*/}
-            <h1 style={{color:"white"}}> ABOUT ME</h1>
-	    <p>
-	    </p>
-	    
- 
+    <section id="know_me">
+        <div className="know_me container">
+            <div className="col-left">
+                <div className="col-img">
+                    <img src="/img/me.jpg"  alt=""/>
+                </div>
+            </div>
 
-</div>
+            <div className="col-right">
+                <h1 className="section-title">About <span>Me</span></h1>
+                <h2>Front End developer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Veritatis sit tenetur doloribus totam reiciendis incidunt assumenda,
+                     fugit iure a optio quas quaerat expedita. 
+                    Reiciendis voluptates sit dolor ipsam fugiat! Blanditiis!</p>
+                    <a href="#" className="cta">Download resume</a>
+            </div>
+        </div>
+    </section>
  
     )
 }

@@ -59,31 +59,21 @@ class Slide_Bar extends Component {
   	 this.setState({index:this.state.index+1})
  }
 	}
-        return (  
-          <div class="slideshow-container">   
-                <div class="mySlides">
-		<AnimatePresence exitBeforeEnter>
-                            <motion.div 
-            key={index}
-	    	    exitBeforeEntry={true}
-            initial={{opacity:1, translateX:"-100vw"}}
+        return (
 	    
-                            animate={{opacity:1.5, translateX:"-10vw"}}
-            transition={{duration:1,ease:'easeOut'}}
-	    exit={{translateX:"100vw", transition:{duration:0.5}}}
-                            >{animae[index].item }</motion.div>
-		</AnimatePresence>
-                 </div>
-                <div className='dot-container'>
-		<ChevronLeft className='chevron_left' onClick={()=>{back_animate()}} style={{color:'grey',fontSize:'30px',fontWeight:'bold'}}/>
-                <span className='dot' ></span>
-                <span className='dot' ></span>
+		<div class="slideshow-container" style={{backgrounColor:"#0B0C10"}}>
 
-                <span className='dot'></span>
-		<ChevronRight className='chevron_left' onClick={()=>{forward_animate()}} style={{color:'grey',fontSize:'30px',fontWeight:'bold'}} />
-
-		
-                </div>
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>My Name is <span></span></h1>
+                <h1>Kingsley  Francis Okpo<span></span></h1>
+		<p>I am a full stack react developer<span></span></p>
+                <a href="#" type="button" class="cta">Download CV</a>
+            </div>
+        </div>
+    </section>
 
             </div>
         

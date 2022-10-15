@@ -3,19 +3,43 @@
     max-width: 700px;
     width: 80%;
     min-width: 280px;
-    margin: auto;
     margin-top: 25px;
     height: inherit;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     border-radius: 10px;
-    color:grey;
-    text-align: center;
+    color:aqua;
 }
 .about_short_text{
     font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 about_heading{
-    color:grey;
     font-size:20px;
+    color: aqua;
+}
+.header_s{
+    display: flex;
+    flex-direction: row;
+}
+.header_s h3{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: aqua;
+    flex-direction: column;
+}
+
+.header_s h3 span{
+    color: aqua;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 img{
     margin-bottom: 25px;
@@ -28,15 +52,14 @@ img{
     margin: 5px;
   }
   .title {
-    color: grey;
-    font-size: 18px;
-    margin: 5px;
-  }
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
+   }
   /* card to  */
 
   .card_to_alt{
       border: 2px solid grey;
-      color: gray;
   }
   .card_to_alt img{
       position: absolute;
@@ -53,7 +76,6 @@ img{
     outline: 0;
     display: inline-block;
     padding: 5px;
-    color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;

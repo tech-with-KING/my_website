@@ -3,6 +3,7 @@ import { ArrowBack, ArrowForward, ChevronLeft, ChevronRight, GitHub, LinkedIn, M
 import React, { Component } from 'react';
 import "./cardbar.css"
 import {motion} from 'framer-motion'
+import TYPED from 'react-typed'
 class Card_componnt extends Component {
     state = {  } 
     render() { 
@@ -13,7 +14,7 @@ class Card_componnt extends Component {
             {
                 id:1,
 		color:'about_heading',
-                item:<GitHub />
+                item:<GitHub style={{ color: '#ffffff' }} />
             },
            {
                id:2,
@@ -41,12 +42,15 @@ class Card_componnt extends Component {
         return (
         <>
 		<div className="card_to" style={{minHeight:'400px'}}>
-                <img src='/img/faceicon' alt="John" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
-                <h3 className="about_heading">Hi &#x1F44B;&#x1F600;  I am Kingley</h3>
-                <p className="title">A Full-Stack Developer</p>
+		<div className='header_s'>
+		<h3 className="about_heading"><TYPED className="about_heading" strings={["Hi..."]}  typeSpeed={100} onComplete={(self) => self.cursor.remove()}/><TYPED className="about_heading" showCursor={false} startDelay={2000} strings={['I am  Kingsley ']}  typeSpeed={100} onComplete={(self) => self.cursor.remove()}/></h3>
+		<img src='/milo-removebg-preview.png' alt="profileImg" style={{width:'130px',height:'130px',borderRadius:'50%',}}/>
+		</div>
+
+
+                <p className="title">A Full-Stack React/Python Developer</p>
 				<p className='about_short_text'>
-		And I’ve spent the last three years learning and building everything  there is to Web and  Software Designs – from Great App/Web UI designs with Reactjs to To building fast and secure Restful Apis with Django and Nodejs. I’m currently applying this knowledge in my role as a full-stack Developer at Algophile.com a coming of Age AI task automation system.I love working on new tasks and collaborating to build great projects so I am open to new opportunities &#x1F44F;.
-		I’m a solution-oriented Full-Stack Web Developer  with a liking for Building web interfaces ,Maths ,Technical Writing &#x1F4DD;, Music &#x1F3B8;, Basket-ball  and Reading &#x1F4DA;.. See some of my very interesting project ideas and articles below &#128640; ; .
+		I build responsive UIs  for web and mobile with fast and seemless APIs to take the load off the clientside thereby improving speed and efficiency.Some of my strong skills are :ReactJs,NoeJs, Python/Django, Git, Lisp, C, I love collaborating and learning. I am open to opportunities.
 
 		</p>
                 <div  className='ba'>

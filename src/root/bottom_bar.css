@@ -128,6 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     width: 40px;
     border-radius: 50%;
 }
@@ -139,7 +140,7 @@
     justify-content: center;
     width: 40px;
     border-radius: 50%;
-    background-color:#000020;
+    transform: rotate(-60deg);
 }
 .extra_contents button{
     width: 80%;
@@ -266,7 +267,6 @@
         justify-content: center;
         width: 40px;
         border-radius: 50%;
-        background-color: rgb(15, 207, 159);
     }
     
     .our_socials ul li{

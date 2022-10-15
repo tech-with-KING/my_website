@@ -1,106 +1,116 @@
-/* Slideshow container */
-.slideshow-container {
-    background-color: black;
-    min-width: 340px;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    padding: 10px;
-  }
-.menu_cancel_icon_container{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-left: 10px;
-    height: 8%;
-}  
-  /* Slides */
-  .mySlides {
-      padding: 5px;
-      padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+/* global colors
+#0B0C10 
+#1F2833 light grey
+#C5C6C7 dark grey
+#66FCF1 light aqu
+#45A29E dark aqua
+*/
+#hero .hero{
+    width:70%;
+    padding:0;
+    margin:0 50px;
+    height: 70vh;
+}
+/*hero section*/
+#hero{
+background-image: url(/public/img/knigt2.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+position:relative;
+z-index:1;
+}
+#hero::after{
+    content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:black;
+    opacity:0.6;
+    z-index: -1;
+}
+#hero h1{
+    display:block;
+    width:fit-content;
+    font-size: 3rem;
+    position:relative;
+    color:transparent;
+    animation: .5s ease forwards text-reveal;
+    animation-delay: 1s
+}
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    padding: 16px;
-    color:black;
-    font-weight: bold;
-    font-size: 20px;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    height: 20px;
-    width: 20px;
-    background-color: rgb(15, 207, 159);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
-    font-size: 20px;
-  }
-  .prev {
-    position: absolute;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: rgb(15, 207, 159);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
-    font-size: 20px
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+#hero p{
+    display:block;
+    width:fit-content;
+    font-size: 1.5rem;
+    position:relative;
+    color:transparent;
+    animation: text-reveal-name .5s ease forwards;
+    animation-delay: 4s
+}
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3){
+    animation: text-reveal-name .5s ease forwards;
+    animation-delay: 3s;
+}
+#hero h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color:#45A29E;
+    animation: 1s ease  text-reveal-box;
+    animation-delay:.5s;
+}
+#hero p span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color:#45A29E;
+    animation: 1s ease  text-reveal-box;
+    animation-delay:3.5s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay:.5s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay:1.5s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay:2.5s;
+}
+.cta{
+    display:inline-block;
+    padding: 10px 30px;
+    color:white;
+    background-color: transparent;
+    border: 2px solid #45A29E;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: ease background-color .5s, color .5s;
+}
+.cta:hover{
+    background-color: #45A29E;
+    color:white;
+}
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
     color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-    background:transparent;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+}
+.brand h1 span{
+    color:#45A29E;
+}
+/*end of hero section*/

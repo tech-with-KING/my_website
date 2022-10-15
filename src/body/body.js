@@ -8,6 +8,8 @@ import img from "./sc/img-removebg-preview.png"
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
 import About from "./about"
+import Projects from "../projects_page/pro"
+import Services from "../services/services"
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
@@ -57,84 +59,15 @@ const Body=(props)=>{
   ]
 
     return(
-            <div className='body'>
-	    {	    /* this part is the main home menu of the app */}
-
-
-		{/* this is the part i dispalay my different tech stacks in that small circle to show all the past projects i have done*/}
-	    <div className='tech_stacks'>
-	    <h3>TECH-STACKS</h3>
-	    <div className='t_s'>
-	    {datas.map((dat)=>{
-		return(
-		    	    <div>
-		
-	    
-	    <div className='t_c' style={{backgroundImage:`url(${dat.img})`}}></div>
-				<p>{dat.name}</p>
-			</div>
-		)
-	    })}
-
-
-
-
-
-
-
-
-	    </div>
-	    
-
-	
-	    </div>
-            <motion.div className='hot'
-	      initial={{opacity:1}}
-              transition={{duration:1}}
-            >
-	    
-             <h1>Projects</h1>
-
-            </motion.div> 
-            <div className='my_projects'>
-                <div  className='eop'>
-		    <div ref={projec_ref} className="p_div">
-			   {
-                    datas.map((data,i)=>{
-                        return(
-                            <motion.div key={data.id}
-			    initial={{opacity:0,transform:'scale(0)'}}
-			    animate={project_view?{opacity:1, transform:'scale(1)'}:{}}
-					transition= {{duration:1,delay:i*1.5}} > 
-                                <Carded img={data.img}/> 
-                            </motion.div>
-                        )
-                    })
-                }
-			
-		    </div>
-		 
-
-                </div>
-
-
-            <>
+	<>            
+         <div className='body'>
+	    <Projects />
             <About />
-            </>
-	
-	    
-                <div className='line'></div>
-            
-	{/*this part of the page is the part i add the remainint part of projec*/}
-            
+            <div className='line'></div>
             <motion.div  className='hots' >
-
-	
-             <h1 className='h_one'>Articles</h1>
-
+                <h1 className='h_one'>Articles</h1>
             </motion.div>
-            
-                <div ref={article_ref}>
+            <div ref={article_ref}>
                 {
                     datas.map((data,i)=>{
                         return(
@@ -143,16 +76,15 @@ const Body=(props)=>{
 			         initial={{opacity:0, translateX:-100}}
 				animate={article_view?{opacity:1, translateX: 0}:{}}
 				transition={{duration:1,delay:i*1}} >
-                                <Carded_Two img={data.img} />
+                                <Carded_Two img={data.img}/>
                             </motion.div>
-                        
                         )
                     })
                 }
-		    </div>
+        	</div>
+            <Services />
             </div>
-               
-        </div>    
+	        </>
      )
 }
 export default Body;

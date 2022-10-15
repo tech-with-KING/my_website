@@ -118,11 +118,11 @@
 .hots{
     height: 50vh;
     width: 100vw;
-    background-image: url('/public/img/pexels-mo-eid-11798029-removebg-preview.png');
+    background-image: url('/public/80.jpg');
     background-position: center;
-    background-repeat: no-repeat;
+      background-repeat: no-repeat;
     margin-bottom: 50px;
-    background-size: contain;
+    background-size: cover;
 
 }
 .h_one, .hot h1{
@@ -131,10 +131,10 @@
 .hot{
     height: 50vh;
     width: 100vw;
-    background-image: url('/public/img/pexels-mo-eid-11798029-removebg-preview.png');
+    background-image: url('/public/80.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 .p_div{

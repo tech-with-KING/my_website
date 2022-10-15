@@ -37,7 +37,7 @@ class App extends Component {
 	return (
 			<>
 				<Router>
-					<Menue_Bar toggle={toggle} set_toggle={set_toggle} />
+		<Menue_Bar toggle={toggle} set_toggle={set_toggle} />
 					<Routes>
 						<Route path="/" element={<><Slide_Bar /><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />

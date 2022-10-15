@@ -14,7 +14,7 @@ class Carded_Two extends Component {
             <div class="contained">
                 <div class="card">
                  <div class="card__header">
-                    <div className='article_img'></div>
+                <div className='article_img' style={{background:`url(${this.props.img})`}}></div>
                 </div>
                 <div class="card__body">
                     <span class="tag tag-red">react</span>
