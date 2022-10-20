@@ -1,4 +1,7 @@
 /* about section */
+.section-title{
+    color: white;
+}
 #know_me .know_me{
     display: flex;
     flex-direction: column-reverse;
@@ -35,11 +38,15 @@
     padding: 10px 20px;
     font-size: 2rem;
 }
-  #know_me .col-left .col-img img{ 
+  #know_me .col-left .col-img .imgd{ 
     width:100%;
     height:368px;
     object-fit: cover;
-    border: 9px solid black  ;
+    border: 5px solid black  ;
+    background-image: url('/public/img.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
  
 #know_me .col-left .col-img {

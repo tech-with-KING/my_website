@@ -42,10 +42,10 @@ const Services=(props)=>{
         <div className="services container">
             <div className="service-top">
                 <h1 className="section-title">Serv<span>i</span>ces</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in exercitationem 
-                    velit nihil labore incidunt molestiae sed, commodi architecto maiores? Illum, 
-                    nihil consequatur! Aut quod
-                     accusamus molestiae, adipisci pariatur sapiente!</p>
+            <p>I specialize in Building fast responsive uI with ReactJs couple with my skill in NodeJs and Django. I occassionaly have to build Apis also to provide data for my clientside
+	interfaces I am a computer enthusiast with great interest in system designs network protocols and
+	Linux Os i have read a lot on the build up of the linux Kernel and so many system protocols such as telnet,ftp,ssh,sftp and how their security features enable secure remote access to informations and resources .I hope someday to be lead developer on building an operating system that can initiate interactions  with it's  end users thereby making the it possible to automate so many proccesses .
+	</p>
             </div>
             <div className="service-bottom">
 

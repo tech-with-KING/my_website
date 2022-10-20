@@ -51,9 +51,11 @@ const Body=(props)=>{
 	name:'C'
     },
       {
-        id:4,
-        text:"this is going to be some of the best articles yuo will ever get to read",
-        img:'/img/git.png',
+          id:4,
+	  heading:"Making The GNU Emacs into an IDE",
+          text:"Emacs if properly configured could become a very produtive tool in the right hands ",
+	  
+        img:'/img/prettyemacs.png',
 	name:'git'
     }
   ]
@@ -65,7 +67,7 @@ const Body=(props)=>{
             <About />
             <div className='line'></div>
             <motion.div  className='hots' >
-                <h1 className='h_one'>Articles</h1>
+            <h1 className="section-tile">ART<span>I</span>CL<span>E</span>s</h1>
             </motion.div>
             <div ref={article_ref}>
                 {

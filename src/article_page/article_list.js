@@ -26,17 +26,17 @@ const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
   const datas =[
       {
           id:1,
-          text:"this is going to be some of the best articles yuo will ever get to read",
+          text:"Making Emacs Into an IDE",
           img:'studio'
       },
       {
         id:2,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:"You Can Code Your Own CMD",
         img:'studio'
     },
     {
         id:3,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:"The Networking/System protocols how SSH comes into the picture",
          img:'studio'
     }
   ]
@@ -50,9 +50,7 @@ const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
             
             <motion.div  className='hots' >
 
-	
-             <h1>Articles</h1>
-
+	    <h1 className="section-title">Art<span>i</span>cl<span>e</span>s</h1>
             </motion.div>
             
                 <div ref={article_ref}>
@@ -64,7 +62,7 @@ const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
 			         initial={{opacity:0, translateX:-100}}
 				animate={article_view?{opacity:1, translateX: 0}:{}}
 				transition={{duration:1,delay:i*1}} >
-                                <Carded_Two />
+                                <Carded_Two  info ={data}/>
                             </motion.div>
                         
                         )

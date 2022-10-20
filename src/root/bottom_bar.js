@@ -40,7 +40,7 @@ const DownBar = () => {
 	return (
 		<div className='downcomponent'>
 			<div className='extra_contents'>
-				<button>Read Our Weekly News Letter</button>
+				<button>Get Great Project Recommendations</button>
 			</div>
 		<div className='menue_bottom'>
 				<Menue_Bar />
@@ -78,11 +78,11 @@ const DownBar = () => {
 				<p>copyright: Algophile.com 2021</p>
 				<p>Email: kingsley@algophile.com
 				</p>
-				<p>This website was made responsively  with love
+				<p>This website was made responsively  with Reactjs
 				</p>
 			</div>
 			<div className='disclaimer'>
-				<p>Client data protection is a core value.
+				<p>Web #.
 
 				</p>
 			</div>

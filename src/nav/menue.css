@@ -54,7 +54,7 @@
      font-size: 20px;
      font-family: monospace;
      font-weight: normal;
-     color: gray;
+     color: white;
     transition: 0.2s ease-out;
     text-decoration: none;
     display:flex;
@@ -105,9 +105,10 @@
       align-items: center;
       text-decoration: none;
       list-style: none;
-      color: gray;
+      color: white;
       padding: 0px;
-      margin-right: 20px;
+      font-size: 16px;
+      margin-rightp: 20px;
       font-family: sans-serif;
       font-weight: normal;
   }
@@ -121,7 +122,8 @@
     min-width: 100px;
     transition: 0.4s ease;
     text-decoration: none;
-    color:gray;
+    color:white;
+    font-size: 16px;
     display:flex;
     flex-direction: row;
     align-items: center;

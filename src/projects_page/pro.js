@@ -8,26 +8,26 @@ const Projects=(props)=>{
       const datas =[
       {
           id:1,
-          text:"this is going to be some of the best articles yuo will ever get to read",
+          text:"Rewriting the Linux CMD in c",
           img:'/img/pythondev1.jpeg',
 	  name:'python'
 	  
       },
       {
         id:2,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:"Streamnet",
           img:'/img/bn.png',
 	  name:'Reac/js'
     },
     {
         id:3,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:"RSA Factoring challenge",
         img:'/img/cforme.jpeg',
 	name:'C'
     },
       {
         id:4,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:"Django Rest Api",
         img:'/img/git.png',
 	name:'git'
     }
@@ -39,9 +39,7 @@ const Projects=(props)=>{
     return(
 
 	    <section  id="projects">
-
       <div className="projects container">
-
         <div className="projects-header"> 
             <h1 className = "section-title">Recent <span>Projects</span></h1>
         </div>
@@ -53,7 +51,7 @@ const Projects=(props)=>{
 		    return(
 			            <div key={project.id} className="projects-card">
                 <div className="top-projects-card">
-                    <h1>Project 1</h1>
+			    <h1>{project.text}</h1>
                     <h2>coding is love</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Magnam omnis, accusantium itaque nulla at nobis eaque autem saepe dicta
@@ -67,12 +65,7 @@ const Projects=(props)=>{
 		    )
 		})
 	    }
-
-          
             </div>
-
-            
-
         </div>
     </section>
 	    
