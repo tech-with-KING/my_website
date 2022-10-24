@@ -13,10 +13,10 @@
 }
 /*hero section*/
 #hero{
-background-image: url(/public/img/knigt2.jpeg);
+background-image: url(/public/img/IMG_20220317_162022.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-background-position:center;
+background-position:top;
 position:relative;
 z-index:1;
 }

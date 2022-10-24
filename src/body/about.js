@@ -14,7 +14,7 @@ const About=(props)=>{
     <section id="know_me">
         <div className="know_me container">
             <div className="col-left">
-            <div className="col-img" style={{backgroundImage:'url(/img/me.jpg)'}}>
+            <div className="col-img" style={{backgroundImage:'url(/img/IMG_20220317_162022.jpg)'}}>
 	         <div className="imgd"></div>
                 </div>
             </div>

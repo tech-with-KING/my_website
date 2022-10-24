@@ -4,32 +4,42 @@ import { useState,useEffect } from 'react';
 import { motion } from 'framer-motion'
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
+import { Link } from 'react-router-dom';
 const Projects=(props)=>{
       const datas =[
       {
-          id:1,
+            id:1,
           text:"Rewriting the Linux CMD in c",
           img:'/img/pythondev1.jpeg',
-	  name:'python'
+	  name:'python',
+      link: '',
+      link_text:'view on github'
 	  
       },
       {
         id:2,
         text:"Streamnet",
           img:'/img/bn.png',
-	  name:'Reac/js'
+	  name:'Reac/js',
+      link: '',
+      link_text:'view on github'
     },
     {
         id:3,
         text:"RSA Factoring challenge",
         img:'/img/cforme.jpeg',
-	name:'C'
+	name:'C',
+    link: '',
+    link_text:'view on github'
+    
     },
       {
         id:4,
         text:"Django Rest Api",
         img:'/img/git.png',
-	name:'git'
+        link: '',
+        link_text:'view on github'
+    
     }
   ]
 
@@ -57,6 +67,7 @@ const Projects=(props)=>{
                         Magnam omnis, accusantium itaque nulla at nobis eaque autem saepe dicta
                          nesciunt illum assumenda
                          magni vero quia quibusdam explicabo? Quaerat, illo recusandae.</p>
+                         <Link to='/'>{project.link_text}</Link>
                 </div>
                 <div className="projects-img">
 			    <img src={project.img} alt={project.img}/>
