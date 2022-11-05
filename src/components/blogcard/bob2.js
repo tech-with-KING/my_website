@@ -19,7 +19,7 @@ class Carded_Two extends Component {
                 <div class="card__body">
                     <span class="tag tag-red">react</span>
                     <h4>Article Name</h4>
-
+		<p>{this.props.t}</p>
                     <div class="card__footer">
                     <div class="user">
                         <img src={bob}  alt="user__image" class="user__image"/>

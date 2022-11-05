@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Carded_Two from '../components/blogcard/bob2';
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
+import data from '../projects_page/data'
 const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
     const [dark,setdark]=useState(false)
@@ -27,17 +28,20 @@ const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
       {
           id:1,
           text:"Making Emacs Into an IDE",
-          img:'studio'
+          img:'studio',
+	  list:[0]
       },
       {
         id:2,
         text:"You Can Code Your Own CMD",
-        img:'studio'
+          img:'studio',
+	  	  list:[0]
     },
     {
         id:3,
         text:"The Networking/System protocols how SSH comes into the picture",
-         img:'studio'
+        img:'studio',
+		  list:[0]
     }
   ]
 

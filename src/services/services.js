@@ -8,20 +8,27 @@ const Services=(props)=>{
       const datas =[
       {
           id:1,
-          text:"this is going to be some of the best articles yuo will ever get to read",
+          title:"React Front End Developer",
+          text:`design and implemented beautifyl ui designs for frontends 
+          that had beautifull and great interfaces that gives responsive fast experience and also lets 
+          the client see great products and services without worrying about speed.`,
           img:'/img/pythondev1.jpeg',
 	  name:'python'
 	  
       },
       {
         id:2,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:`Api with designs with mongo db directly brings data to the clientside int json formats and 
+        this data can be used in building projects .
+        `,
           img:'/img/bn.png',
 	  name:'Reac/js'
     },
     {
         id:3,
-        text:"this is going to be some of the best articles yuo will ever get to read",
+        text:`Data base with  python , Postgress or mySql involves the ability to implement great design and 
+         that come to be very interesting aspect of code makes and pass we want to be able to let the datas 
+         `,
         img:'/img/cforme.jpeg',
 	name:'C'
     },

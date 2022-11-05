@@ -10,6 +10,7 @@ import {useAnimation} from "framer-motion"
 import About from "./about"
 import Projects from "../projects_page/pro"
 import Services from "../services/services"
+import data from '../projects_page/data'
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
@@ -35,20 +36,24 @@ const Body=(props)=>{
           id:1,
           text:"this is going to be some of the best articles yuo will ever get to read",
           img:'/img/pythondev1.jpeg',
-	  name:'python'
+	  name:'python',
+	  word:data[0]
 	  
       },
       {
         id:2,
         text:"this is going to be some of the best articles yuo will ever get to read",
           img:'/img/bn.png',
-	  name:'Reac/js'
+	  name:'Reac/js',
+	  word:data[1]
+	  
     },
     {
         id:3,
         text:"this is going to be some of the best articles yuo will ever get to read",
         img:'/img/cforme.jpeg',
-	name:'C'
+	name:'C',
+	word:data[2]
     },
       {
           id:4,
@@ -56,7 +61,8 @@ const Body=(props)=>{
           text:"Emacs if properly configured could become a very produtive tool in the right hands ",
 	  
         img:'/img/prettyemacs.png',
-	name:'git'
+	  name:'git',
+	  word:data[3]
     }
   ]
 
@@ -78,7 +84,7 @@ const Body=(props)=>{
 			         initial={{opacity:0, translateX:-100}}
 				animate={article_view?{opacity:1, translateX: 0}:{}}
 				transition={{duration:1,delay:i*1}} >
-                                <Carded_Two img={data.img}/>
+                                <Carded_Two img={data.img} t={data.word}/>
                             </motion.div>
                         )
                     })

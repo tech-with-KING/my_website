@@ -66,9 +66,9 @@ const DownBar = () => {
 					</ul>
 				</>
 				<div className='modals'>
-					<div className='goto_top'>
+					<a href='#' className='goto_top'>
 						<ArrowCircleUp style={{ color: 'aqua', fontSize: '40px', margin: "5px" }} />
-					</div>
+					</a>
 					<div className='message'>
 						<Send style={{ fontSize: '30px', color: "aqua" }} />
 					</div>
