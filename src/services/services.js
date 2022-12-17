@@ -9,8 +9,7 @@ const Services=(props)=>{
       {
           id:1,
           title:"React Front End Developer",
-          text:`design and implemented beautifyl ui designs for frontends 
-          that had beautifull and great interfaces that gives responsive fast experience and also lets 
+          text:`Ui designs for Web in react. Responsive and fast user experience and also lets 
           the client see great products and services without worrying about speed.`,
           img:'/img/pythondev1.jpeg',
 	  name:'python'
@@ -18,6 +17,7 @@ const Services=(props)=>{
       },
       {
         id:2,
+        title:'Api design with node js',
         text:`Api with designs with mongo db directly brings data to the clientside int json formats and 
         this data can be used in building projects .
         `,
@@ -26,6 +26,7 @@ const Services=(props)=>{
     },
     {
         id:3,
+        title:'Data base designs with python/postgresql',
         text:`Data base with  python , Postgress or mySql involves the ability to implement great design and 
          that come to be very interesting aspect of code makes and pass we want to be able to let the datas 
          `,
@@ -34,7 +35,19 @@ const Services=(props)=>{
     },
       {
         id:4,
+        title:'System Design',
         text:"this is going to be some of the best articles yuo will ever get to read",
+        img:'/img/git.png',
+	name:'git'
+    },
+    {
+        id:5,
+        title:'Mathematics ',
+        text:`I love solving real world problems using analytical maths , number theory and computational maths 
+         an early attempt was writting the rsa factoring challenges which uses skill in finding lcms of large numbers .
+         I was able to optimize well because i applied concepts from abstract algebra such fermat's little theorem and eulers 
+         theorem for factoring large numbes .I also wrote an algorithm matrixes as the bases for finding the lcm of large numbers the 
+         algrithm worked so well`,
         img:'/img/git.png',
 	name:'git'
     }
@@ -54,52 +67,23 @@ const Services=(props)=>{
 	Linux Os i have read a lot on the build up of the linux Kernel and so many system protocols such as telnet,ftp,ssh,sftp and how their security features enable secure remote access to informations and resources .I hope someday to be lead developer on building an operating system that can initiate interactions  with it's  end users thereby making the it possible to automate so many proccesses .
 	</p>
             </div>
-            <div className="service-bottom">
-
-                <div className="service-card">
+            <div className="service-bottom" >
+            {
+                datas.map((data)=>{
+                    return(
+                        <div className="service-card" style={{backgroundImage:`url(${data.img})`}}>
                     <div className="service-icon">
 
                     </div>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Od
-                        io voluptates, ducimus eius placeat natus ipsa eum repe
-                        llat iusto modi, nulla fugiat consequatur, rem enim con
-                        sectetur ipsum dignissimos nihil. Aspernatur, blanditiis.</p>
+                    <h2>{data.title}</h2>
+                    <p>{data.text}</p>
                         </div>
             
-                   <div className="service-card">
-                    <div className="service-icon">
-
-                    </div>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Od
-                        io voluptates, ducimus eius placeat natus ipsa eum repe
-                        llat iusto modi, nulla fugiat consequatur, rem enim con
-                        sectetur ipsum dignissimos nihil. Aspernatur, blanditiis.</p>
-                </div>
-
-                <div className="service-card">
-                    <div className="service-icon">
-
-                    </div>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Od
-                        io voluptates, ducimus eius placeat natus ipsa eum repe
-                        llat iusto modi, nulla fugiat consequatur, rem enim con
-                        sectetur ipsum dignissimos nihil. Aspernatur, blanditiis.</p>
-                </div>
-
-                <div className="service-card">
-                    <div className="service-icon">
-
-                    </div>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Od
-                        io voluptates, ducimus eius placeat natus ipsa eum repe
-                        llat iusto modi, nulla fugiat consequatur, rem enim con
-                        sectetur ipsum dignissimos nihil. Aspernatur, blanditiis.</p>
-                </div>
-
+                    )
+                })
+            }
+                
+                   
             </div>
         </div>
     </section>
