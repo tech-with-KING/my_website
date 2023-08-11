@@ -10,6 +10,7 @@ import DownBar from './root/bottom_bar';
 import Projects from "./projects_page/index"
 import Menue_Bar from './nav/menue'
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
+import Luminar from './body_new/body';
 
 
 class App extends Component {
@@ -37,9 +38,9 @@ class App extends Component {
 	return (
 			<>
 				<Router>
-		<Menue_Bar toggle={toggle} set_toggle={set_toggle} />
+		{/* <Menue_Bar toggle={toggle} set_toggle={set_toggle} /> */}
 					<Routes>
-						<Route path="/" element={<><Slide_Bar /><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Body /></>} />
+						<Route path="/" element={<><Luminar /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
 		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
 
