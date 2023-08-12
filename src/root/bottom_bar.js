@@ -4,7 +4,10 @@ import React from 'react';
 import './bottom_bar.css'
 import { GitHub, Twitter, LinkedIn, Send, YouTube, ArrowCircleUp} from '@mui/icons-material';
 import Menue_Bar from '../nav/menue'
-const DownBar = () => {
+const DownBar = ({value}) => {
+
+	const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0'];
+	const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A', '', '#377788'];
 	const animae = [
 
 
@@ -38,7 +41,7 @@ const DownBar = () => {
 		}
 	]
 	return (
-		<div className='downcomponent'>
+		<div className='downcomponent' style={{ backgroundColor: colors[value] }}>
 			<div className='extra_contents'>
 				<button>Get Great Project Recommendations</button>
 			</div>

@@ -9,22 +9,35 @@ import Top_Bar from './nav/topbar'
 import DownBar from './root/bottom_bar';
 import Projects from "./projects_page/index"
 import Menue_Bar from './nav/menue'
+import PortfolioPage from './components/porfolio/portfolio';
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
 import Luminar from './body_new/body';
+import ChatPage from './components/chatpage/chatpage';
 
 
 class App extends Component {
-    state = {
-	toggle: false
-    }
-    componentDidMount() {
-	const api = async () => {
-	    const ret = await fetch('http://localhost:5500/articles')
-	    const bar = await ret.json()
-	    console.log(bar)
-	}
-	api()
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+		  sharedValue: 0,
+		};
+	  }
+	
+	
+	componentDidMount() {
+		this.interval = setInterval(this.updateSharedValue, 5000); // Update every second
+	  }
+	
+	  componentWillUnmount() {
+		clearInterval(this.interval);
+	  }
+	
+	  updateSharedValue = () => {
+		this.state.sharedValue < 5?
+		this.setState((prevState) => ({ sharedValue: prevState.sharedValue + 1 })):
+		this.setState((prevState) => ({ sharedValue:0}))
+	  };
+
 
     render() {
 	const { toggle } = this.state
@@ -40,13 +53,16 @@ class App extends Component {
 				<Router>
 		{/* <Menue_Bar toggle={toggle} set_toggle={set_toggle} /> */}
 					<Routes>
-						<Route path="/" element={<><Luminar /><Body /></>} />
+						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
 		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
 
 						<Route path="/articles/one" element={<><Top_Bar toggfle={toggle} set_toggle={set_toggle} /><Articles /></>} />
+						<Route path='/portfolio' element={<PortfolioPage />}></Route>
+						
 					</Routes>
-					<DownBar />
+					<ChatPage/>
+					<DownBar value={this.state.sharedValue} />
 				</Router>
 
 			</>

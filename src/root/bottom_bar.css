@@ -2,8 +2,6 @@
     height: inherit;
     position: relative;
     width: 100vw;
-    background-color:black;
-    color: gray;
     display: flex;
     overflow: hidden;
     flex-direction: column;

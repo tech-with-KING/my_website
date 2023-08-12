@@ -1,0 +1,26 @@
+.glassy-profile {
+    display: flex;
+    background-color: transparent;
+  }
+  
+  .text-side {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: Arial;
+    font-size: 12px;
+  }
+  
+  .image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-side img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  

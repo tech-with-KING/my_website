@@ -22,43 +22,25 @@ body {
 .animation-circle {
   position: relative;
   padding: 10px;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
+  border-radius: 10px;
+  margin: 10px;
+  width: 55vw;
+  height: fit-content;
+  padding: 0;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s;
   opacity: 1;
+  min-width: 280px;
+  max-height: 70vh;
 }
 
 .animation-circle.active {
   opacity: 0;
 }
 
-.animated-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.revealing-text {
-  font-size: 24px;
-  text-align: center;
-  position: relative;
-  color: #222; /* Darker text color */
-}
-
-.blinking-cursor {
-  width: 18px;
-  border-radius: 50%;
-  height: 18px; 
-  position: relative;
-  display: none;
-}
 
 .navbar {
   position: fixed;
@@ -69,8 +51,6 @@ body {
   flex-direction: column;
   width: 400px; /* Adjust the width of the sidebar */
   padding: 10px 0;
-  background-color: rgba(0, 0, 0);
-  transition: ease-in 0.5;
 }
 .nav_logo{
   display: none;
@@ -124,7 +104,6 @@ body {
     width: 100vw; /* Adjust the width of the sidebar */
     padding: 10px 0;
     background-color: rgba(0, 0, 0);
-    transition: ease-in 0.5;
   }
   .nav-menu_alt {
     list-style: none;
