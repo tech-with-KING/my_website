@@ -4,10 +4,13 @@ body, h1, h2, p, button {
   }
   
   /* Basic styling for the entire page */
+
+  /* // const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0']; */
+  /* // const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A','#377788']; */
   .portfolio {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #eceaea;
+    background-color:#BED9E0;
     width: 100vw;
     display: flex;
     flex-direction:column;
@@ -20,19 +23,12 @@ body, h1, h2, p, button {
     min-width: 300px;
     max-height: 500px;
   }
-  .header_file{
-    width: 100%;
-    padding: 10px;
-    height: fit-content;
-    background-color: #333;
-    color: white;
-  }
   
   
   /* Navigation */
   nav {
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color:transparent;
   }
   
   /* Main content */
@@ -42,7 +38,7 @@ body, h1, h2, p, button {
   
   /* Sections */
   section {
-    background-color: white;
+    background-color:transparent;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -57,7 +53,15 @@ body, h1, h2, p, button {
     margin: 0 auto;
     padding: 10px; /* 16:9 aspect ratio */
   }
-  
+  .google-slides-container{
+    width: 100vw;
+    height: fit-content;
+  }
+  .google-slides-container iframe{
+    min-width: 300px;
+    width: 60vw;
+    height: 50vh;
+  }
   
   /* Download links */
   a {

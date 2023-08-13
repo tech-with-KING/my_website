@@ -37,18 +37,12 @@ const RevealingText = ({ text, delayBetweenLetters, resetKey, backgroundColor })
 };
 
 const Luminar = ({value}) => {
-  const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0'];
-  const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A', '', '#377788'];
-  const texts = [
-    'Hi I am Kingsley',
-    'i am a software engineer',
-    'I love collaborating to build innovative designs',
-    "do you have great ideas ?",
-    'let\'s connect'
-  ];
-  const [navbarActive, setNavbarActive] = useState(false);
-  const [resetKey, setResetKey] = useState(0); 
+  const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198'];
+  const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A'];
 
+  // const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0'];
+  // const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A','#377788'];
+  const [navbarActive, setNavbarActive] = useState(false);
   const [isOpen, setOpen] = useState(false)
 
 
@@ -62,7 +56,7 @@ const Luminar = ({value}) => {
       <div className={`animation-circle`}>
         <GlassyProfile />
       </div>
-      <div className='navbar' style={{ backgroundColor:navbarActive ? text_colors[value] :'transparent', color:navbarActive? colors[value]: text_colors[value] }}>
+      <div className='navbar' style={{ backgroundColor:navbarActive ? text_colors[value] :colors[value], color:navbarActive? colors[value]: text_colors[value] }}>
          <div style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
          <div onClick={toggleNavbar} style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
             <Hamburger toggled={isOpen} toggle={setOpen}  />
@@ -72,9 +66,9 @@ const Luminar = ({value}) => {
           </div>
         <ul className='nav-menu' style={{display : navbarActive?"flex":'none' }}>
           <li><a href="#" style={{ color:colors[value] }}>Home</a></li>
-          <li><a href="#" style={{ color:colors[value] }}>About</a></li>
-          <li><a href="#" style={{ color:colors[value] }}>Services</a></li>
+          <li><a href="#" style={{ color:colors[value] }}>Elevator Pitch</a></li>
           <li><a href="#" style={{ color:colors[value] }}>Portfolio</a></li>
+          <li><a href="#" style={{ color:colors[value] }}>About</a></li>
           <li><a href="#" style={{ color:colors[value] }}>Contact</a></li>
         </ul>
       </div>

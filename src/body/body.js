@@ -11,6 +11,7 @@ import About from "./about"
 import Projects from "../projects_page/pro"
 import Services from "../services/services"
 import data from '../projects_page/data'
+import PortfolioPage from '../components/porfolio/portfolio';
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
@@ -69,13 +70,14 @@ const Body=(props)=>{
     return(
 	<>            
          <div className='body'>
-	    <Projects />
+	    {/* <Projects /> */}
             <About />
-            <div className='line'></div>
-            <motion.div  className='hots' >
-            <h1 className="section-tile">ART<span>I</span>CL<span>E</span>s</h1>
-            </motion.div>
-            <div ref={article_ref}>
+            <PortfolioPage />
+            {/* <div className='line'></div> */}
+            {/* <motion.div  className='hots' >
+            <h1 className="section-tile">ART<span>I</span>CL<span>E</span>S</h1>
+            </motion.div> */}
+            {/* <div ref={article_ref}>
                 {
                     datas.map((data,i)=>{
                         return(
@@ -89,8 +91,8 @@ const Body=(props)=>{
                         )
                     })
                 }
-        	</div>
-            <Services />
+        	</div> */}
+            {/* <Services /> */}
             </div>
 	        </>
      )

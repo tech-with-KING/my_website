@@ -33,9 +33,9 @@ class App extends Component {
 	  }
 	
 	  updateSharedValue = () => {
-		this.state.sharedValue < 5?
+		this.state.sharedValue <= 1?
 		this.setState((prevState) => ({ sharedValue: prevState.sharedValue + 1 })):
-		this.setState((prevState) => ({ sharedValue:0}))
+		this.setState(() => ({ sharedValue:0}))
 	  };
 
 
@@ -53,7 +53,7 @@ class App extends Component {
 				<Router>
 		{/* <Menue_Bar toggle={toggle} set_toggle={set_toggle} /> */}
 					<Routes>
-						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /></>} />
+						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
 		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
 

@@ -1,10 +1,11 @@
 .downcomponent{
-    height: inherit;
+    height: 30vh;
     position: relative;
     width: 100vw;
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    padding: 10px;
    
 }
 

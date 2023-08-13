@@ -23,18 +23,11 @@ Feel free to customize and expand upon this text to reflect your personal experi
 
   return (
     <div className='portfolio'>
-      <header className='header_file'>
-        <h1>{name}'s Portfolio</h1>
-      </header>
-      <nav style={{ padding: '10px', backgroundColor: '#f0f0f0' }}>
-        <button onClick={() => handleScrollTo('video-section')}>Pitch Video</button>
-        <button onClick={() => handleScrollTo('downloads-section')}>Downloads</button>
-      </nav>
       <main style={{ padding: '20px' }}>
         <section id="video-section" style={{ marginBottom: '40px' }}>
-          <h2>hello world</h2>
-          <p>{message}</p>
-          <h2>My Pitch Video</h2>
+
+          
+          <h1 className='pitch-video'>Pitch Video</h1>
           <div className='video_container'>
             <iframe src="https://www.youtube.com/embed/jJPmhXbgqpo" 
             title="18 July 2023" frameborder="0" allow="accelerometer; autoplay; 
@@ -44,6 +37,10 @@ Feel free to customize and expand upon this text to reflect your personal experi
           </div>
         </section>
         <section id="downloads-section" style={{ marginBottom: '40px' }}>
+        <div className="">
+               <h1 className='pitch-slides-deck'>Pitch Slides Deck</h1>
+               <GoogleSlides />
+           </div>
           <h2>Downloads</h2>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <a
@@ -62,7 +59,6 @@ Feel free to customize and expand upon this text to reflect your personal experi
             </a>
           </div>
         </section>
-        {/* Add more sections for projects, skills, etc. */ message}
       </main>
       <footer style={{ padding: '20px', backgroundColor: '#f0f0f0', borderTop: '1px solid #ccc' }}>
         &copy; {new Date().getFullYear()} {name}
@@ -72,3 +68,19 @@ Feel free to customize and expand upon this text to reflect your personal experi
 };
 
 export default PortfolioPage;
+// GoogleSlides.js
+
+const GoogleSlides = () => {
+  const googleSlidesEmbedUrl = 'https://docs.google.com/presentation/d/1uzMGw-mBBkNuHwgzNz8ImnT4tE1Mjs-BYX2H86PBrwE/embed';
+
+  return (
+    <div className="google-slides-container">
+      <iframe
+        src={googleSlidesEmbedUrl}
+        title="Pitch Slides Deck"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+

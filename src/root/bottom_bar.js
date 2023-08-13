@@ -6,8 +6,8 @@ import { GitHub, Twitter, LinkedIn, Send, YouTube, ArrowCircleUp} from '@mui/ico
 import Menue_Bar from '../nav/menue'
 const DownBar = ({value}) => {
 
-	const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0'];
-	const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A', '', '#377788'];
+	const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198',];
+	const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A', ];
 	const animae = [
 
 
@@ -41,18 +41,18 @@ const DownBar = ({value}) => {
 		}
 	]
 	return (
-		<div className='downcomponent' style={{ backgroundColor: colors[value] }}>
-			<div className='extra_contents'>
+		<div className='downcomponent' style={{ backgroundColor: colors[value], color: colors[value] }}>
+			{/* <div className='extra_contents'>
 				<button>Get Great Project Recommendations</button>
-			</div>
-		<div className='menue_bottom'>
-				<Menue_Bar />
+			</div> */}
+		{/* <div className='menue_bottom'> */}
+				{/* <Menue_Bar />
 
-				<img className='logo' src='/img/mormon.png' alt='logo' />
-			</div>
+				<img className='logo' src='/img/mormon.png' alt='logo' /> */}
+			{/* </div> */}
 			<div className='our_socials'>
 				<>
-					<button>Contact Us :</button>
+					<button>Contact Me :</button>
 					<ul>
 						{
 							animae.map((anim, i) => {
@@ -72,15 +72,15 @@ const DownBar = ({value}) => {
 					<a href='#' className='goto_top'>
 						<ArrowCircleUp style={{ color: 'aqua', fontSize: '40px', margin: "5px" }} />
 					</a>
-					<div className='message'>
+					{/* <div className='message'>
 						<Send style={{ fontSize: '30px', color: "aqua" }} />
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className='text'>
 				<p>copyright: Algophile.com 2021</p>
-				<p>Email: kingsley@algophile.com
-				</p>
+				{/* <p>Email: kingsley@algophile.com */}
+				{/* </p> */}
 				<p>This website was made responsively  with Reactjs
 				</p>
 			</div>

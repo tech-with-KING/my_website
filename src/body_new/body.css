@@ -12,30 +12,30 @@ body {
 
 .color-changing-container {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height:70vh;
   width: 100vw;
   transition: background-color 1s;
 }
 
-.animation-circle {
-  position: relative;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-  width: 90vw;
-  height: fit-content;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.5s;
-  opacity: 1;
-  max-height: 80vh;
-}
+  .animation-circle {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 90vw;
+    height: fit-content;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+    opacity: 1;
+    max-height: 80vh;
+  }
 
 .animation-circle.active {
   opacity: 0;
@@ -51,6 +51,7 @@ body {
   flex-direction: column;
   width: 400px; /* Adjust the width of the sidebar */
   padding: 10px 0;
+  z-index: 9999;
 }
 .nav_logo{
   display: none;
@@ -68,7 +69,8 @@ body {
   margin: 0;
   padding: 0;
   height: fit-content;
-  justify-content: center;
+  z-index: 999999;
+  justify-content: flex-start;
   min-height: 45vh;
   padding-bottom:20px ;
 }
@@ -94,6 +96,15 @@ body {
   .navbar{
     display: none;
   }
+  .color-changing-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100vw;
+    transition: background-color 1s;
+  }
   .navbar_alt {
     position: fixed;
     top: 0;
@@ -103,7 +114,7 @@ body {
     flex-direction: row;
     width: 100vw; /* Adjust the width of the sidebar */
     padding: 10px 0;
-    background-color: rgba(0, 0, 0);
+    z-index: 9999;
   }
   .nav-menu_alt {
     list-style: none;
@@ -136,8 +147,7 @@ body {
     font-weight: bold;
     margin-left: 10px;
   } 
-  animation-circle {
-    position: relative;
+  .animation-circle {
     padding: 10px;
     border-radius: 10px;
     margin: 10px;

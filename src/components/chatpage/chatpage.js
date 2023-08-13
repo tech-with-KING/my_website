@@ -37,6 +37,17 @@ const ChatPage = ({ onClose }) => {
 
   <div className="chatbox">
     <div className="chat">
+    {messages.map((message, index) => (
+          <div key={index} className='chat'>
+            <img
+              src={message.sender === 'me' ? 'avatar_me.jpg' : 'avatar_other.jpg'}
+              alt="Avatar"
+              className="message-avatar"
+            />
+            <div className="message-content">{message.text}</div>
+          </div>
+        ))}
+
       <img src="https://images.unsplash.com/photo-1657299143482-4f4ea1ebd71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></img>
       <p className="msg">
         <ion-icon name="caret-back-outline"></ion-icon>
