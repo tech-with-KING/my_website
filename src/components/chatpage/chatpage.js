@@ -1,56 +1,66 @@
+// ChatPage.js
 import React, { useState } from 'react';
-import './chatpage.css'; 
-import Message from './message'; // Make sure to provide the correct path
+import './chatpage.css'; // You'll need to create this CSS file for styling
 
-const ChatPage = () => {
-  const [messages, setMessages] = useState([
-    { text: 'Hello!', sender: true, status: 'sent' },
-    { text: 'Hi there!', sender: false, status: 'read' },
-  ]);
-  const [newMessage, setNewMessage] = useState('');
-
-  const handleClose = () => {
-    // Implement logic to close the chat page
-  };
+const ChatPage = ({ onClose }) => {
+  const [messages, setMessages] = useState([]);
+  const [inputText, setInputText] = useState('');
 
   const handleSendMessage = () => {
-    if (newMessage.trim() === '') return;
+    if (inputText.trim() !== '') {
+      setMessages([...messages, { text: inputText, sender: 'me' }]);
+      setInputText('');
+    }
+  };
 
-    const newMessageObj = { text: newMessage, sender: true, status: 'sent' };
-    setMessages([...messages, newMessageObj]);
-
-    // Simulate a response after a delay
-    setTimeout(() => {
-      const responseMessage = { text: 'Got your message!', sender: false, status: 'read' };
-      setMessages([...messages, responseMessage]);
-    }, 1000);
-
-    setNewMessage('');
+  const handleClearChat = () => {
+    setMessages([]);
+    setInputText('');
   };
 
   return (
-    <div className="chat-page">
-      <div className="chat-header">
-        <span className="chat-title">Chat with Kingsley</span>
-        <span className="close-icon" onClick={handleClose}>
-          &#x2715;
-        </span>
-      </div>
-      <div className="chat-messages">
-        {messages.map((message, index) => (
-          <Message key={index} message={message} />
-        ))}
-      </div>
-      <div className="message-input">
-        <input
-          type="text"
-          placeholder="Type your message..."
-          value={newMessage}
-          onChange={(e) => setNewMessage(e.target.value)}
-        />
-        <button onClick={handleSendMessage}>Send</button>
-      </div>
+   < div className="chatwindow">
+  <div className="chatwindowheader">
+    <div className="grp-img">
+      <img className="i1" src="https://images.unsplash.com/photo-1660476705851-21e527337f9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></img>
     </div>
+
+    <div className="grp-info">
+      <h3 className="grp-name">
+        Kingsley Francis Okpo
+      </h3>
+      <p className="grp-status">
+        I typically reply within minutes.!!!
+      </p>
+    </div>
+  </div>
+
+  <div className="chatbox">
+    <div className="chat">
+      <img src="https://images.unsplash.com/photo-1657299143482-4f4ea1ebd71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></img>
+      <p className="msg">
+        <ion-icon name="caret-back-outline"></ion-icon>
+        Hi there! <br></br>
+        Looking to get started? I can help answer to your questions!
+      </p>
+    </div>
+    <div className="chat">
+      <img src="https://images.unsplash.com/photo-1660481451479-7ad6d6ad0223?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></img>
+      <p className="msg">
+        <ion-icon name="caret-back-outline"></ion-icon>
+        I need a laptop 😊
+      </p>
+    </div>
+  </div>
+
+  <div className="policy">
+    
+  </div>
+
+  <a href="#" className="close">
+    <ion-icon name="close-outline"></ion-icon>
+  </a>
+</div>
   );
 };
 

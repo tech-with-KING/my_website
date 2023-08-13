@@ -6,9 +6,9 @@
   .text-side {
     flex: 1;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    font-family: Arial;
-    font-size: 12px;
+    color: white;
+    font-family: monospace;
+    font-size: 11px;
   }
   
   .image-side {
@@ -23,4 +23,11 @@
     max-height: 100%;
     object-fit: cover;
   }
-  
+  @media (max-width: 450px){
+    .text-side{
+      color: white;
+      font-size: 10px;
+      padding: 5px;
+      font-family: monospace;
+    }
+  }

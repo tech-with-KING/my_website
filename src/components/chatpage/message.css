@@ -1,0 +1,9 @@
+.chatwindow-container{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  background-color:rgb(255, 255, 255,0.1);
+  backdrop-filter: blur(2px);
+}

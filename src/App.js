@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Body from './body/body';
-import Modal from './components/modalbox/modalbox'
+
 import Articles from "./article_page/index"
 import Article from "./article_page/article_list"
 import Slide_Bar from './components/slidder/slidebar'
@@ -12,7 +12,7 @@ import Menue_Bar from './nav/menue'
 import PortfolioPage from './components/porfolio/portfolio';
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
 import Luminar from './body_new/body';
-import ChatPage from './components/chatpage/chatpage';
+import Message from './components/chatpage/message';
 
 
 class App extends Component {
@@ -61,7 +61,7 @@ class App extends Component {
 						<Route path='/portfolio' element={<PortfolioPage />}></Route>
 						
 					</Routes>
-					<ChatPage/>
+					{/* <Message /> */}
 					<DownBar value={this.state.sharedValue} />
 				</Router>
 
