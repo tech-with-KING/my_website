@@ -9,7 +9,7 @@
 #know_me .know_me{
     display: flex;
     flex-direction: column-reverse;
-    background-color: white;
+    background-color:#BED9E0;
     text-align: center;
     height: 150vh;
     width: 100vw;
@@ -67,7 +67,7 @@
   top: 25px;
   height: 98%;
   width:95%;
-  border: 7px solid #45A29E;
+  border: 7px solid #377788;
   z-index: -1;
 }
 
