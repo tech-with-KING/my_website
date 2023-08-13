@@ -24,40 +24,44 @@ Feel free to customize and expand upon this text to reflect your personal experi
   return (
     <div className='portfolio'>
       <main style={{ padding: '20px' }}>
+        <section>
+        <div className="col-right">
+                <h3 className="portfols">PORTFOlIO</h3>
+                <a href=''></a>
+                <h1 className='section-title'>STUDY BUDDY</h1>
+                <h2>Front End developer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Veritatis sit tenetur doloribus totam reiciendis incidunt assumenda,
+                     fugit iure a optio quas quaerat expedita. 
+                    Reiciendis voluptates sit dolor ipsam fugiat! Blanditiis!</p>
+                    
+            </div>
+        </section>
         <section id="video-section" style={{ marginBottom: '40px' }}>
 
           
-          <h1 className='pitch-video'>Pitch Video</h1>
+          <h1 className='section-title'>PITCH VIDEO</h1>
           <div className='video_container'>
             <iframe src="https://www.youtube.com/embed/jJPmhXbgqpo" 
             title="18 July 2023" frameborder="0" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen>
             </iframe>
+            
           </div>
         </section>
+
         <section id="downloads-section" style={{ marginBottom: '40px' }}>
         <div className="">
-               <h1 className='pitch-slides-deck'>Pitch Slides Deck</h1>
+               <h1 className='section-title'>Pitch Slides Deck</h1>
                <GoogleSlides />
            </div>
-          <h2>Downloads</h2>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <a
-              href={cvUrl}
-              download
-              style={{ marginRight: '20px', padding: '10px 20px', backgroundColor: '#3498db', color: 'white' }}
-            >
-              Download CV
-            </a>
-            <a
-              href={projectPdfUrl}
-              download
-              style={{ padding: '10px 20px', backgroundColor: '#e74c3c', color: 'white' }}
-            >
-              Download Project PDF
-            </a>
-          </div>
+           <h1 className='portfols'>Contributors :</h1>
+           
+            <a>Daniel </a>
+            <a>Phebean Adeniji</a>
+            <a>Kingsley Okpo</a>
+           
         </section>
       </main>
       <footer style={{ padding: '20px', backgroundColor: '#f0f0f0', borderTop: '1px solid #ccc' }}>

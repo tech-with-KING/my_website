@@ -3,6 +3,7 @@ import './body.css'; // Import your CSS file for styling
 import Hamburger from 'hamburger-react';
 import { Height } from '@mui/icons-material';
 import GlassyProfile from './glassy';
+import { Link } from 'react-router-dom';
 const RevealingText = ({ text, delayBetweenLetters, resetKey, backgroundColor }) => {
   const [revealedText, setRevealedText] = useState('');
 
@@ -66,7 +67,7 @@ const Luminar = ({value}) => {
           </div>
         <ul className='nav-menu' style={{display : navbarActive?"flex":'none' }}>
           <li><a href="#" style={{ color:colors[value] }}>Home</a></li>
-          <li><a href="#" style={{ color:colors[value] }}>Elevator Pitch</a></li>
+          <li><Link to={'/elevator-pitch'} style={{ color:colors[value] }}>Elevator Pitch</Link></li>
           <li><a href="#" style={{ color:colors[value] }}>Portfolio</a></li>
           <li><a href="#" style={{ color:colors[value] }}>About</a></li>
           <li><a href="#" style={{ color:colors[value] }}>Contact</a></li>

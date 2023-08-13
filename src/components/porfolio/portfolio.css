@@ -2,7 +2,11 @@ body, h1, h2, p, button {
     margin: 0;
     padding: 0;
   }
-  
+  .portfols{
+    font-size: 25px;
+    color: #377788;
+    font-weight: normal;
+  }
   /* Basic styling for the entire page */
 
   /* // const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0']; */
@@ -17,11 +21,13 @@ body, h1, h2, p, button {
     align-items: center;
   }
   iframe{
-    width: 60vw;
+    width: 80vw;
     height: 50vh;
     border-radius: 5px;
     min-width: 300px;
     max-height: 500px;
+    border: none;
+    border: 10px;
   }
   
   

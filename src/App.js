@@ -55,8 +55,8 @@ class App extends Component {
 					<Routes>
 						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /><Body /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
-		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
-
+		<Route path="/elevator-pitch" element={<section id='know-me'><h1 className='section-title'>COMING SOON !!!</h1></section>} />
+							
 						<Route path="/articles/one" element={<><Top_Bar toggfle={toggle} set_toggle={set_toggle} /><Articles /></>} />
 						<Route path='/portfolio' element={<PortfolioPage />}></Route>
 						
