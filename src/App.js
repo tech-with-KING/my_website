@@ -53,7 +53,7 @@ class App extends Component {
 				<Router>
 		{/* <Menue_Bar toggle={toggle} set_toggle={set_toggle} /> */}
 					<Routes>
-						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /><Body /></>} />
+						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /></>} />
 						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
 		<Route path="/projects" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Projects /></>} />
 

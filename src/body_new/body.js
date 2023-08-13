@@ -49,14 +49,6 @@ const Luminar = ({value}) => {
   const [navbarActive, setNavbarActive] = useState(false);
   const [resetKey, setResetKey] = useState(0); 
 
-  useEffect(() => {
-    const colorInterval = setInterval(() => {
-      setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
-      setResetKey(resetKey + 1); // Reset RevealingText component when background changes
-    }, 5000);
-
-    return () => clearInterval(colorInterval);
-  }, [resetKey]);
   const [isOpen, setOpen] = useState(false)
 
 
@@ -71,8 +63,8 @@ const Luminar = ({value}) => {
         <GlassyProfile />
       </div>
       <div className='navbar' style={{ backgroundColor:navbarActive ? text_colors[value] :'transparent', color:navbarActive? colors[value]: text_colors[value] }}>
-         <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-         <div onClick={toggleNavbar} style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+         <div style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
+         <div onClick={toggleNavbar} style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
             <Hamburger toggled={isOpen} toggle={setOpen}  />
           </div>
           <div className="nav-logo" style={{textAlign:'center'}}>Kingsley Okpo</div>
