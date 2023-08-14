@@ -29,11 +29,18 @@ Feel free to customize and expand upon this text to reflect your personal experi
                 <h3 className="portfols">PORTFOlIO</h3>
                 <a href=''></a>
                 <h1 className='section-title'>STUDY BUDDY</h1>
-                <h2>Front End developer</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Veritatis sit tenetur doloribus totam reiciendis incidunt assumenda,
-                     fugit iure a optio quas quaerat expedita. 
-                    Reiciendis voluptates sit dolor ipsam fugiat! Blanditiis!</p>
+                <p>
+                Studybuddy is a mobile application that provides
+                 quality learning to junior secondary school students.
+                  It offers a variety of features that are tailored to 
+                  each student's individual needs, including 
+                  interactive lessons, a personalized learning dashboard, and a community of students and teachers who can offer support and encouragement.
+Studybuddy is the perfect way for junior secondary school students to 
+get the support they need to succeed in school. It is easy to use and fun, 
+and it can help students learn more effectively.
+
+                </p>
+                <p>{}</p>
                     
             </div>
         </section>

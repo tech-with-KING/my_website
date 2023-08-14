@@ -77,6 +77,7 @@ const Luminar = ({value}) => {
         <ul className='nav-menu_alt' >
           <li><a href="#" style={{ color:text_colors[value] }}>Home</a></li>
           <li><Link to={'/elevator-pitch'} style={{ color:text_colors[value] }}>Elevator Pitch</Link></li>
+          
         </ul>
       </div>
     </div>

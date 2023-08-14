@@ -15,7 +15,7 @@ body {
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  height:70vh;
+  height:85vh;
   width: 100vw;
   transition: background-color 1s;
 }
