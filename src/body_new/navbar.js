@@ -36,8 +36,8 @@ const RevealingText = ({ text, delayBetweenLetters, resetKey, backgroundColor })
     </div>
   );
 };
-
-const Luminar = ({value}) => {
+ 
+const NavManu= ({value}) => {
   const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198'];
   const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A'];
 
@@ -52,24 +52,20 @@ const Luminar = ({value}) => {
     setNavbarActive(!navbarActive);
   };
 
-  return (
-    <div className="color-changing-container" style={{ backgroundColor: colors[value] }}>
-      <div className={`animation-circle`}>
-        <GlassyProfile />
-      </div>
+  return (<>
       <div className='navbar' style={{ backgroundColor:navbarActive ? text_colors[value] :colors[value], color:navbarActive? colors[value]: text_colors[value] }}>
          <div style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
          <div onClick={toggleNavbar} style={{display:'flex', alignItems:'center', justifyContent:'center', background:'transparent'}}>
-            <Hamburger style={{backgroundColor:'transparent'}} toggled={isOpen} toggle={setOpen}  />
+            <Hamburger toggled={isOpen} toggle={setOpen}  />
           </div>
           <div className="nav-logo" style={{textAlign:'center'}}>Kingsley Okpo</div>
           </div>
         <ul className='nav-menu' style={{display : navbarActive?"flex":'none' }}>
-          <li><a href="#" style={{ color:colors[value], backgroundColor:'transparent' }}>Home</a></li>
-          <li><Link to={'/elevator-pitch'} style={{ color:colors[value],backgroundColor:'transparent' }}>Elevator Pitch</Link></li>
-          <li><a href="#" style={{ color:colors[value],backgroundColor:'transparent' }}>Portfolio</a></li>
-          <li><a href="#" style={{ color:colors[value],backgroundColor:'transparent' }}>About</a></li>
-           <li><a href="#" style={{ color:colors[value],backgroundColor:'transparent' }}>Blogs</a></li>
+          <li><a href="/" style={{ color:colors[value] }}>Home</a></li>
+          <li><Link to={'/elevator-pitch'} style={{ color:colors[value] }}>Elevator Pitch</Link></li>
+          <li><a href="#" style={{ color:colors[value] }}>Portfolio</a></li>
+          <li><a href="#" style={{ color:colors[value] }}>About</a></li>
+           <li><a href="#" style={{ color:colors[value] }}>Blogs</a></li>
           
           
         </ul>
@@ -77,7 +73,7 @@ const Luminar = ({value}) => {
       <div className='navbar_alt' style={{ backgroundColor:colors[value], color:text_colors[value] }}>
           <div className="nav_logo" style={{textAlign:'center'}}>Kingsley Okpo</div>
         <ul className='nav-menu_alt' >
-          <li><a href="#" style={{ color:text_colors[value] }}>Home</a></li>
+          <li><a href="/" style={{ color:text_colors[value] }}>Home</a></li>
           <li><Link to={'/elevator-pitch'} style={{ color:text_colors[value] }}>Elevator Pitch</Link></li>
            <li><a href="#" style={{ color:colors[value] }}>Portfolio</a></li>
           <li><a href="#" style={{ color:colors[value] }}>About</a></li>
@@ -85,8 +81,8 @@ const Luminar = ({value}) => {
           
         </ul>
       </div>
-    </div>
+</>
   );
 };
 
-export default Luminar;
+export default NavManu;

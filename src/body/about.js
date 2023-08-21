@@ -20,18 +20,15 @@ const About=(props)=>{
 
             <div id='class-action' className="col-right">
                 <h1 className="section-title">About <span>Me</span></h1>
-                <h2 >Front End developer</h2>
+                <h2 >Data Analyst</h2>
                 <p  className='class-action'>
-                Kingsley Okpo is a driven and accomplished software
-     engineer who is both a dedicated student and a forward-thinking software 
-     engineering intern. He is passionate about the role of educational technology in shaping 
-     modern learning environments and aims to develop innovative solutions for more accessible 
-     and effective education. His track record includes significant contributions to cutting-edge software 
-     applications, demonstrating leadership, overcoming challenges, and delivering outstanding 
-     results. Kingsley's commitment to positive impact and growth sets him apart as a risin
-     g star in the field, inspiring fellow students and aspiring engineers. He continues to push boundaries 
-     and contribute to the educational tech landscape, with 
-    a focus on building groundbreaking innovations for future generations.
+                "Adeniji Damilola Phebean, a recent Masters graduate working as an Information Manager
+with an Msc degree in Management Information System from Covenant University. Damilola
+excels in management skills, project management, operation research, and so on. Currently
+learning at ALX, Damilola aims to drive impactful solutions through her managerial skills and
+her goal is to build a strong management team where their impact will be felt in various
+sectors. Beyond Management, Damilola explores emerging tech trends and fosters
+community learning and industry advancement.
                 </p>
             </div>
         </div>

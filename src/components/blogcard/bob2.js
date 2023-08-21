@@ -29,9 +29,7 @@ class Carded_Two extends Component {
                         </div>
                     </div>
                   </div>
-
                 </div>
-                 
                 </div>
             </div>
         </>
