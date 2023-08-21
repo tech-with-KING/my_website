@@ -57,7 +57,7 @@ const Elevator= ({value}) => {
     <NavManu value={value} />
       <div className='elevator'>
             <h1 className='section-title'>Elevator Pitch</h1>
-          <iframe src="https://www.youtube.com/embed/jJPmhXbgqpo" 
+          <iframe src="https://www.youtube.com/embed/Nm-u-6bPDpY" 
             title="18 July 2023" frameborder="0" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen>
