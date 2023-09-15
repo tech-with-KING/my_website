@@ -1,0 +1,116 @@
+
+.menuebar .li:hover {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    
+} 
+ 
+ .menuebar .li{
+     font-size: 20px;
+     font-family: monospace;
+     font-weight: normal;
+     color: white;
+    transition: 0.2s ease-out;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+}
+
+
+#small_menuebar{
+  background-color: blue;
+  color: white;
+  width: 100vw;
+  height:fit-content;
+
+
+}  
+ 
+
+.tol{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+
+  .menuebar_alt{
+    display: none;
+  }
+
+  .dropdown{
+    transition: 0.8s ease;
+    height: 0;
+    
+  }
+  .dropdown.open{
+    display: block;
+    height: fit-content;
+  }
+ .dropdown_ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+ }
+ .menuebar_alt img{
+  object-fit: contain;
+  height: 70px;
+}
+@media (min-width: 650px){
+  .menuebar_alt ul{
+    width: 60%;
+    height: 100% ;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .menuebar_alt .li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+      list-style: none;
+      color: white;
+      padding: 0px;
+      font-size: 16px;
+      margin-right: 20px;
+      font-family: sans-serif;
+      font-weight: normal;
+      transition: 0.3s ease;
+  }
+  .menuebar_alt .li:hover{
+    padding: 10px;
+    font-weight: bolder;
+    border-bottom: 1.5px solid white;
+    color:white;
+  }
+    
+
+  .menuebar_alt{
+    background:black;
+    width: 100vw;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    cursor: pointer; 
+}  
+#small_menuebar{
+display: none;
+}
+.menuebar_alt img{
+  object-fit: contain;
+  height: 90%;
+}
+}

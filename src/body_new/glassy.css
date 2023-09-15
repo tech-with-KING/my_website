@@ -1,12 +1,25 @@
 .glassy-profile {
     display: flex;
     background-color: transparent;
+    min-height: 60vh;
+    height: 55h;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   
   .text-side {
+    height: 100%;
     flex: 1;
-    padding: 20px;
+    padding: 40px;
     color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-color:transparent;
     font-family: monospace;
     font-size: 20px;
     margin: 5px;
@@ -16,23 +29,22 @@
     font-weight: bold;
   }
   .glassy-header{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .image-side {
+    height: 50vh;
+    background-color:transparent;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   
-  .image-side img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
+ 
   .personally{
-    background-color: rgb(255, 255, 255, 0.3) !important;
     color: black;
     font-size: 14px;
     padding: 5px;
@@ -43,11 +55,71 @@
   .personally:hover{
     background-color: rgb(255, 255, 255, 0.6) !important;
   }
-  @media (max-width: 450px){
-    .text-side{
-      color: white;
-      font-size: 2px;
-      padding: 5px;
-      font-family: monospace;
-    }
+ #img{
+  border-radius: 10px;
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+ /* mobile  */
+
+ @media (max-width: 767px) {
+  .glassy-profile {
+    display: flex;
+    min-height:50vh ;
+    height: 50;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
+
+
+  .text-side {
+    height: 100%;
+    flex: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-color:transparent;
+    font-family: monospace;
+    font-size: 16px;
+    margin: 5px;
+    max-width: 50%;
+  }
+
+  .glassy-header{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .glassytitle{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .image-side {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #img{
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+  
+ }

@@ -1,0 +1,118 @@
+/* Default styles for larger screens */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    margin: 0 auto;
+  }
+  #socials{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:transparent;
+  }
+#accounts{
+  height: 70%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #007BFF;
+}
+#accounts h2{
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+#accounts p{
+  color: white;
+  margin-bottom: 20px;
+}
+  #portfolios {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 60%;
+  }
+  .box-content div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 50%;
+    padding: 10px;
+  }
+  .box-content div p{
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    padding: 0;
+    width: 100%;
+    text-align: start;
+    margin-top: 10px;
+  }
+  #head{
+    color: white;
+    font-size: 2.5em;
+  }
+  .box {
+    height: 100%;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .box_link{
+   height: 100%;
+   width: 100%;
+  }
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  .box-content {
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+  
+
+
+    width: 100%;
+  }
+  #portfolios:nth-child(3){
+    background-color: rgb(0,0,225,0.8);
+  }
+  #btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 60px;
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+ 
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+
+    #socials{
+      width: 100%;
+      height: 50%;
+      background-color: rebeccapurple;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:transparent;
+    }
+
+}

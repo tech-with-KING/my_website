@@ -8,13 +8,15 @@ import Slide_Bar from './components/slidder/slidebar'
 import Top_Bar from './nav/topbar'
 import DownBar from './root/bottom_bar';
 import Projects from "./projects_page/index"
-import Menue_Bar from './nav/menue'
+import Menue_Bar from './nav/menu'
 import PortfolioPage from './components/porfolio/portfolio';
-import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Location} from "react-router-dom"
 import Luminar from './body_new/body';
 import Message from './components/chatpage/message';
 import Elevator from './components/ElevatorPitch/elavator';
-
+import Services from './services/services';
+import { AnimatePresence } from 'framer-motion';
+import Transitioner from './transition';
 
 class App extends Component {
 	constructor(props) {
@@ -34,7 +36,7 @@ class App extends Component {
 	  }
 	
 	  updateSharedValue = () => {
-		this.state.sharedValue <= 1?
+		this.state.sharedValue < 1?
 		this.setState((prevState) => ({ sharedValue: prevState.sharedValue + 1 })):
 		this.setState(() => ({ sharedValue:0}))
 	  };
@@ -43,6 +45,7 @@ class App extends Component {
     render() {
 	const { toggle } = this.state
 	const set_toggle = () => { toggle ? this.setState({ toggle: false }) : this.setState({ toggle: true }) }
+	const place = this.props
 	const home = () => {
 	    return (
 		    <>
@@ -52,16 +55,17 @@ class App extends Component {
 	return (
 			<>
 				<Router>
-		{/* <Menue_Bar toggle={toggle} set_toggle={set_toggle} /> */}
-					<Routes>
+				<transition />
+				<Menue_Bar toggle={toggle} set_toggle={set_toggle} />
+					<AnimatePresence mode='wait'>
+						<Routes location={location} key={location.pathname} >
 						<Route path="/" element={<><Luminar value={this.state.sharedValue}  /><Body /></>} />
-						<Route path="/articles" element={<><Top_Bar toggle={toggle} set_toggle={set_toggle} /><Article /></>} />
-		<Route path="/elevator-pitch" element={<section id='know-me'><h1 className='section-title'><Elevator value={this.state.sharedValue}/></h1></section>} />
-							
-						<Route path="/articles/one" element={<><Top_Bar toggfle={toggle} set_toggle={set_toggle} /><Articles /></>} />
+						<Route path="/Blog" element={<><Transitioner /></>} />
+						<Route path='/services' element={< Services />}></Route>
+						<Route path="/articles" element={<><Articles /></>} />
 						<Route path='/portfolio' element={<PortfolioPage />}></Route>
-						
 					</Routes>
+					</AnimatePresence>
 					{/* <Message /> */}
 					<DownBar value={this.state.sharedValue} />
 				</Router>

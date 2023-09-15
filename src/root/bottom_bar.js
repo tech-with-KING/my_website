@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import React from 'react';
 import './bottom_bar.css'
 import { GitHub, Twitter, LinkedIn, Send, YouTube, ArrowCircleUp} from '@mui/icons-material';
-import Menue_Bar from '../nav/menue'
+import Menue_Bar from '../nav/menu'
 const DownBar = ({value}) => {
 
-	const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198',];
-	const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A', ];
+	const colors = ['black'];
+	const text_colors = ['white'];
 	const animae = [
 
 
@@ -41,7 +41,7 @@ const DownBar = ({value}) => {
 		}
 	]
 	return (
-		<div className='downcomponent' style={{ backgroundColor: colors[value], color: colors[value] }}>
+		<div className='downcomponent' style={{ backgroundColor: colors[0], color: text_colors[0] }}>
 			{/* <div className='extra_contents'>
 				<button>Get Great Project Recommendations</button>
 			</div> */}

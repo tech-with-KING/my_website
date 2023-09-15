@@ -1,5 +1,5 @@
 /* Service section */
-#services .services{
+#services .services-container{
     flex-direction: column;
     text-align: center;
     max-width: 100vw;

@@ -1,91 +1,212 @@
-body, h1, h2, p, button {
-    margin: 0;
+ 
+  .my_portfolio{
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh;
+    background-color: black;
+  }
+ /* my experience */
+ .my_experience{
+  background-color: white;
+  height: 100vh;
+  width: 300px;
+ }
+ .my_portfolio div{
+    width: 300px;
+    margin: 10px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+ 
+  .my_portfolio .my_image-side{
+    background-image: url('./IMG_6606.JPG');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
     padding: 0;
   }
-  .portfols{
-    font-size: 25px;
-    color: #377788;
-    font-weight: normal;
-  }
-  /* Basic styling for the entire page */
+  .my_portfolio #portfolio_desc h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    position: relative;
 
-  /* // const colors = ['rgb(12,28,37)', '#268BD2', '#2AA198', '#3490A7', '#BED9E0']; */
-  /* // const text_colors = ['rgb(134,255,175)', '#0A1C2A', '#052D2A','#377788']; */
-  .portfolio {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:#BED9E0;
+    width: 600px;
+  }
+
+  .my_portfolio :nth-child(2) div{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .my_glassy-profile {
+    display: flex;
+    background-color: transparent;
+    min-height: 60vh;
+    height: 55h;
     width: 100vw;
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #my_portfolio_main{
+    background-color: black;
+  }
+  .my_text-side {
+    height: 100%;
+    flex: 1;
+    padding: 40px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-color:transparent;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 5px;
+  }
+  .my_glassytitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .my_glassy-header{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .my_image-side {
+    height: 40vh;
+    background-color:transparent;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
-  iframe{
-    width: 80vw;
-    height: 50vh;
+  
+ 
+  .my_personally{
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    width: 160px !important;
     border-radius: 5px;
-    min-width: 300px;
-    max-height: 500px;
-    border: none;
-    border: 10px;
-  }
-  
-  .col-right p{
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    line-height: 1.5rem;
-    width: 100%;
-  }
-  /* Navigation */
-  nav {
-    padding: 10px;
-    background-color:transparent;
-  }
-  
-  /* Main content */
-  main {
-    padding: 20px;
-  }
-  
-  /* Sections */
-  section {
-    background-color:transparent;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  /* Video container */
-  .video-container {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 10px; /* 16:9 aspect ratio */
-  }
-  .google-slides-container{
-    width: 100vw;
-    height: fit-content;
-  }
-  .google-slides-container iframe{
-    min-width: 300px;
-    width: 60vw;
-    height: 50vh;
-  }
-  @media (min-width: 650px){
-    .col-right p{
-      padding: 20px;
-      margin-bottom: 20px;
-      font-size: 2.5rem;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      line-height: 2.5rem;
-      width: 100%;
-    }
+    margin: 5px;
   }
 
-  
+
+  .my_personally:hover{
+    background-color: rgb(255, 255, 255, 0.4) !important;
+  }
+ #img{
+  height: 70%;
+  width: 30%;
+  max-width: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ 
+.stacks {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+  font-size: 30px;
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+}
+.my_project_name{
+  background-color: rgba(250, 250, 250, 0.2);
+  color: white;
+  border: 5px;
+}
+/* YourComponent.css */
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px; /* Adjust the gap as needed */
+  justify-items: center;
+}
+
+.image-item {
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.glassy-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.glassy-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .image-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .image-list {
+    grid-template-columns: repeat(auto-fit, minmax(800%, 1fr));
+  }
+}
+.my_projects_header{
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 20px;
+}
+
+
+.my_container_exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0; /* Background color of the container */
+}
+
+.my_container_item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; 
+  border-radius: 5px;
+  height: 80px !important ;
+
+}
+
+.my_name {
+  font-size: 16px;
+  margin-right: 10px;
+  color: white;
+}
+
+.my_number {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

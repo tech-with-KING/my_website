@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './bob.css'
+import './bob2.css'
 import bob from './img.JPG'
 class Carded extends Component {
     constructor(props) {
@@ -7,25 +7,29 @@ class Carded extends Component {
     }
     state = { 
         
-    }
-    
+     }
     render() { 
         return ( 
         <>
-            <div class="container_" style={{width:'400px'}}>
-                <div class="card_">
-                    <div class="card__header">
-                        <div className='project_img' style={{backgroundImage:`url(${this.props.img})`}}></div>
-                    </div>
-                    <div class="card__body_">
-                <span class="tag tag-red" >react</span>
-                    <h4>Making Emacs Into An IDE</h4>
-                    <p style={{margin:'5px'}}>Loestiae ihil! At ea atque quidem!</p>
-                    </div>
+            <div class="contained">
+                <div class="card">
+                 <div class="card__header">
+                <div className='article_img' style={{background:`url(${this.props.img})`}}></div>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag-red">react</span>
+                    <h4>Article Name</h4>
+		<p>{this.props.t}</p>
                     <div class="card__footer">
-                        
-                
+                    <div class="user">
+                        <img src={bob}  alt="user__image" class="user__image"/>
+                        <div class="user__info">
+                        <h5>kingsley2018</h5>
+                        <small>2d ago</small>
+                        </div>
                     </div>
+                  </div>
+                </div>
                 </div>
             </div>
         </>

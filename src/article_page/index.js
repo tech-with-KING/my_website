@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer"
 import APP from "./code_block"
 import { useAnimation } from "framer-motion"
+import transition from '../transition';
 const Articles = (props) => {
 	const [toggle, settoggle] = useState(false)
 	const { ref: article_ref, inView: article_view } = useInView()
@@ -38,6 +39,6 @@ const Articles = (props) => {
 		</div>
 	)
 }
-export default Articles;
+export default transition(Articles);
 
 

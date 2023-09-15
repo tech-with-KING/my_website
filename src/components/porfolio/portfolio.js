@@ -1,97 +1,135 @@
 import React from 'react';
 import './portfolio.css'
+import transition from '../../transition';
+import Navbar_Alt from '../../body_new/men';
 const PortfolioPage = () => {
-  const name = 'Kingsley Okpo';
-  const message = `
-  As a passionate software engineer and mathematician, I thrive on the exhilarating intersection of logic and creativity. With a solid foundation in mathematics, I approach software development as an elegant puzzle that demands both analytical thinking and innovative solutions. My journey into this field began with my fascination for algorithms and patterns, which eventually led me to pursue degrees in both mathematics and computer science.
-
-Throughout my career, I've had the privilege of working on diverse projects that have sharpened my skills in various technologies. From crafting efficient algorithms to developing user-friendly interfaces, I'm committed to creating robust software solutions that marry precision with practicality. The ever-evolving landscape of technology exhilarates me, and I'm constantly driven to learn new languages, frameworks, and paradigms to stay at the forefront of innovation.
-
-In addition to my technical pursuits, I believe in effective communication and collaboration as essential pillars of successful software engineering. My experience collaborating with cross-functional teams has taught me the value of combining technical expertise with clear communication to deliver exceptional results.
-
-When I'm not immersed in code, you'll find me exploring the world of abstract mathematics, finding beauty in elegant theorems and proofs. This love for both software engineering and mathematics fuels my determination to tackle complex challenges and contribute meaningfully to the world of technology.
-
-Feel free to customize and expand upon this text to reflect your personal experiences and accomplishments accurately.
-`
-  const videoUrl = 'https://www.youtube.com/embed/your-video-id';
-  const cvUrl = 'link-to-your-cv';
-  const projectPdfUrl = 'link-to-your-project-pdf';
-
-  const handleScrollTo = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  };
-
+  const text = `This text is just a sample text format for react`
   return (
-    <div className='portfolio'>
-      <main style={{ padding: '20px' }}>
-        <section>
-        <div className="col-right">
-                <h3 className="portfols">PORTFOlIO</h3>
-                <a href=''></a>
-                <h1 className='section-title'>STUDY BUDDY</h1>
-                <p>
-                Studybuddy is a mobile application that provides
-                 quality learning to junior secondary school students.
-                  It offers a variety of features that are tailored to 
-                  each student's individual needs, including 
-                  interactive lessons, a personalized learning dashboard, and a community of students and teachers who can offer support and encouragement.
-Studybuddy is the perfect way for junior secondary school students to 
-get the support they need to succeed in school. It is easy to use and fun, 
-and it can help students learn more effectively.
-
-                </p>
-                <p>{}</p>
-                    
-            </div>
-        </section>
-        <section id="video-section" style={{ marginBottom: '40px' }}>
-
-          
-          <h1 className='section-title'>PITCH VIDEO</h1>
-          <div className='video_container'>
-            <iframe src="https://www.youtube.com/embed/jJPmhXbgqpo" 
-            title="18 July 2023" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen>
-            </iframe>
-            
-          </div>
-        </section>
-
-        <section id="downloads-section" style={{ marginBottom: '40px' }}>
-        <div className="">
-               <h1 className='section-title'>Pitch Slides Deck</h1>
-               <GoogleSlides />
-           </div>
-           <h1 className='portfols'>Contributors :</h1>
-           
-            <a>Daniel </a>
-            <a>Phebean Adeniji</a>
-            <a>Kingsley Okpo</a>
-           
-        </section>
-      </main>
-      <footer style={{ padding: '20px', backgroundColor: '#f0f0f0', borderTop: '1px solid #ccc' }}>
-        &copy; {new Date().getFullYear()} {name}
-      </footer>
+    <transition>
+    
+    <div  id='my_portfolio_main'>
+    <Navbar_Alt />
+    <div className='my_portfolio'>
+       <div className="my_text-side">
+        <h3 className='my_glassytitle'>Hello There </h3>
+        <h1 className='my_glassy-header'>Frontend Developer <br></br>and UI Researcher</h1>
+        <p>{text}</p>
+        <p>-Linus Trovald</p>
+      </div>
+      <div className="my_image-side">
+        <div id='my_portfolio_img' ></div>
+      </div>
+     <Projects />
     </div>
+    <ul className='stacks'>
+      <li>React</li>
+      <li>Javasript</li>
+      <li>C/C++</li>
+      <li>Python</li>
+    </ul>
+    <YourComponent />
+    </div>
+  </transition>
   );
 };
+
+
+
 
 export default PortfolioPage;
-// GoogleSlides.js
 
-const GoogleSlides = () => {
-  const googleSlidesEmbedUrl = 'https://docs.google.com/presentation/d/1uzMGw-mBBkNuHwgzNz8ImnT4tE1Mjs-BYX2H86PBrwE/embed';
+const sampleData = [
+  {
+    id: 1,
+    name: 'Project 1',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 2,
+    name: 'Project 2',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 3,
+    name: 'Project 3',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 4,
+    name: 'Project 4',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 5,
+    name: 'Project 5',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 6,
+    name: 'Project 6',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 7,
+    name: 'Project 7',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 8,
+    name: 'Project 8',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 9,
+    name: 'Project 9',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+  {
+    id: 10,
+    name: 'Project 10',
+    color: 'rgba(250, 250, 250, 0.2)',
+  },
+];
 
+const YourComponent = () => {
   return (
-    <div className="google-slides-container">
-      <iframe
-        src={googleSlidesEmbedUrl}
-        title="Pitch Slides Deck"
-        allowFullScreen
-      ></iframe>
+    <div>
+      <h1 className='my'>Projects</h1>
+      <div className="image-list">
+        {sampleData.map((item) => (
+          <div
+            className="image-item"
+            key={item.id}
+            style={{
+              backgroundColor:item.color,
+              height: '300px',
+              borderRadius: '5px',
+            }}
+          >
+            <button className="glassy-button">{item.name}</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
+
+const data = [
+  { name: 'Item 1', number: 10 },
+  { name: 'Item 2', number: 20 },
+  { name: 'Item 3', number: 30 },
+];
+
+function Projects() {
+  return (
+    <div className="my_container_exp">
+      {data.map((item, index) => (
+        <div key={index} className="my_container_item">
+          <span className="my_name">{item.name}</span>
+          <span className="my_number">+{item.number}</span>
+        </div>
+      ))}
+    </div>
+  );
+}

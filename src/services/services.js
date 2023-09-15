@@ -4,6 +4,9 @@ import { useState,useEffect } from 'react';
 import { motion } from 'framer-motion'
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
+import transition from '../transition';
+import Navbar_Alt from '../body_new/men';
+import Transitioner from '../transition';
 const Services=(props)=>{
       const datas =[
       {
@@ -57,9 +60,11 @@ const Services=(props)=>{
     const {ref:article_ref,inView:article_view}=useInView()
     const {ref:projec_ref,inView:project_view}=useInView()
     return(
-
+        <>
+        <Transitioner />
 	    <section id="services">
-        <div className="services container">
+            
+        <div className="services-container">
             <div className="service-top">
                 <h1 className="section-title">Serv<span>i</span>ces</h1>
             <p>I specialize in Building fast responsive uI with ReactJs couple with my skill in NodeJs and Django. I occassionaly have to build Apis also to provide data for my clientside
@@ -88,7 +93,7 @@ const Services=(props)=>{
         </div>
     </section>
 
-	    
+   </>
     )
 }
 export default Services;

@@ -1,6 +1,7 @@
 // ChatPage.js
 import React, { useState } from 'react';
 import './chatpage.css'; // You'll need to create this CSS file for styling
+import { Send } from '@mui/icons-material';
 
 const ChatPage = ({ onClose }) => {
   const [messages, setMessages] = useState([]);
@@ -27,10 +28,10 @@ const ChatPage = ({ onClose }) => {
 
     <div className="grp-info">
       <h3 className="grp-name">
-        Kingsley Francis Okpo
+        Leave me a message !!!
       </h3>
       <p className="grp-status">
-        I typically reply within minutes.!!!
+        I typically reply within minutes... 
       </p>
     </div>
   </div>
@@ -67,7 +68,9 @@ const ChatPage = ({ onClose }) => {
   <div className="policy">
     
   </div>
-
+  <div className='input-container'></div>
+<input placeholder='enter text here'></input>
+<Send />
   <a href="#" className="close">
     <ion-icon name="close-outline"></ion-icon>
   </a>

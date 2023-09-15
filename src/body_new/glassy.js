@@ -1,22 +1,19 @@
 import React from 'react';
 import './glassy.css'; // Import your CSS file for styling
-import img from './IMG_6608.JPG'
+import img from './IMG_6606.jpg'
 import { Link } from 'react-router-dom';
 const GlassyProfile = () => {
-    const text = `Kingsley Okpo is a driven and accomplished software
-     engineer who is both a dedicated student and a forward-thinking software 
-     engineering intern. He is passionate about the role of educational technology in shaping.
-`
+   const text = 'The best software is Free software '
   return (
     <div className="glassy-profile">
       <div className="text-side">
-        <h2 className='glassytitle'>BIO :</h2>
-        <h1 className='glassy-header'>Innovating Education through Software Engineering Excellence</h1>
+        <h3 className='glassytitle'>Hello There &#x1F44F;</h3>
+        <h1 className='glassy-header'>Frontend Developer <br></br>and UI Researcher</h1>
         <p>{text}</p>
-        <a className='personally' href='#class-action'> Continue Reading</a>
+        <p>-Linus Trovald</p>
       </div>
       <div className="image-side">
-        <img src={img} alt="Profile" />
+        <div id='img' style={{backgroundImage:`url(${img})`}}></div>
       </div>
     </div>
   );

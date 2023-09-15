@@ -15,25 +15,21 @@
 
 .chatwindow {
   width: 30%;
-  min-height: 230px;
+  min-height: 350px;
   max-width: 100vw;
   min-width: 280px;
-  overflow-y: scroll;
-  overflow-x: hidden;
   background: #ececf0;
-  margin: 0 auto;
   margin-top: 50px;
   border-radius: 10px;
-  position: fixed;
-  right: 0;
   box-shadow: #292739 0 10px 20px;
   display: flex;
   flex-direction: column;
   margin: 10px;
+  background-color: rgba(250,250,250,0.4);
 }
 
 .chatwindowheader {
-  background: #ff6969;
+  
   display: flex;
   padding: 15px;
   border-radius: 10px 10px 0 0;
@@ -75,7 +71,7 @@
 }
 
 .chatbox {
-  padding: 40px 20px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -128,7 +124,7 @@
   max-height: 30px;
   max-width: 30px;
   border-radius: 50%;
-  background: #ff6969;
+  background-color: #ff6969;
   color: white;
   display: flex;
   align-items: center;

@@ -41,12 +41,8 @@
     height: 200px;
     width: 90vw;
 }
-.body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+#about_section div 
  .square p {
       text-align: justify;
       font-size: 20px;
@@ -69,17 +65,7 @@
     width: 100%;
 }
 
-.body{
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    overflow-x: hidden;
-    flex-direction:column;
-    padding: 20px;
-    box-sizing: border-box;
-}
+
 .tech_articles{
     height: inherit;
     display: flex;
@@ -132,6 +118,14 @@
     display: flex;
     flex-direction: column;
 }
+#article_parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px; /* Adjust the gap as needed */
+    justify-items: center;
+    width: 100vw;
+}
+
 @media (min-width: 850px){
     .tech_stacks{
     display: flex;
