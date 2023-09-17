@@ -12,9 +12,7 @@ html{
     scroll-behavior:smooth;
     overflow-x: hidden;
 }
+
 a{
-    text-decoration: none;
-}
-span{
-    color:crimson;
+  text-decoration: none;
 }

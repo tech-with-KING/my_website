@@ -1,17 +1,29 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import './T.css'
-const Transitioner = () =>{
+import './transition.css'
+const AnimatePage = (MainComponent) =>{
     return () =>{
         <>
-            <div id='transit'
-                // initial={{x:'100%', y:'100%'}}
-                // animate={{x:'0%', y:'0%'}}
-                // transition={{duration:3, ease:'easeInOut'}}
-            ></div>
+        <MainComponent />
+        <motion.div 
+            className='slie_in'
+            initial={{scaleY:0}}
+            animate={{scaleY:0}}
+            exit={{scaleY:1}}
+            transition={{duration:1, ease:[0.22, 1, 0.36, 1]}}
+        />
+          <motion.div 
+            className='slie_out'
+            initial={{scaleY:0}}
+            animate={{scaleY:0}}
+            exit={{scaleY:1}}
+            transition={{duration:1, ease:[0.22, 1, 0.36, 1]}}
+        />
+        
         </>
         
+
     }
 }
 
-export default Transitioner;
+export default AnimatePage;

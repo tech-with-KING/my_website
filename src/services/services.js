@@ -6,7 +6,7 @@ import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion"
 import transition from '../transition';
 import Navbar_Alt from '../body_new/men';
-import Transitioner from '../transition';
+import AnimatePage from '../transition';
 const Services=(props)=>{
       const datas =[
       {
@@ -61,7 +61,7 @@ const Services=(props)=>{
     const {ref:projec_ref,inView:project_view}=useInView()
     return(
         <>
-        <Transitioner />
+        
 	    <section id="services">
             
         <div className="services-container">
@@ -96,4 +96,4 @@ const Services=(props)=>{
    </>
     )
 }
-export default Services;
+export default AnimatePage(Services);

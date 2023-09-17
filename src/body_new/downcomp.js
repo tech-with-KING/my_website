@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // You'll need to import Link from react-router-dom if you're using React Router
-import img1 from './img1.jpeg'
+import img1 from './IMG_6606.jpg'
 import img2 from './IMG_6606.JPG'
 import img3 from './blog.jpg'
+import img4 from './resume.jpg'
 import './dow.css'
 import { GitHub, Mail, MailOutline, Twitter } from '@mui/icons-material';
 const MyComponent = () => {
@@ -31,7 +32,7 @@ const MyComponent = () => {
     {
       id: 4,
       heading:'Resume',
-      img:img1,
+      img:img4,
       desc:"Download My Resume",
       btn:'Download'
     },

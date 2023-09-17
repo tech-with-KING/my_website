@@ -47,6 +47,13 @@ const Menue_Bar=(props)=>{
 	},
 	{
 	    img:'/milo-removebg-preview.png',
+	    link:'/services',
+	    name:'Services',
+	    classname:'li',
+	    id:5
+	},
+	{
+	    img:'/milo-removebg-preview.png',
 	    link:'/about',
 	    name:'About Me',
 	    classname:'li',
@@ -72,7 +79,7 @@ const Menue_Bar=(props)=>{
 			{
 			resources.map((rec)=>{
 				return(
-				<li><Link className={rec.classname} key={rec.id} to={rec.link}>
+				<li key={rec.i}><Link className={rec.classname} key={rec.id} to={rec.link}>
 					{rec.name}
 				</Link></li>
 				)

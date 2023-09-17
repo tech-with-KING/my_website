@@ -10,6 +10,7 @@ import Services from "../services/services"
 import data from '../projects_page/data'
 import PortfolioPage from '../components/porfolio/portfolio';
 import Carded_Two from '../components/blogcard/bob2';
+import Luminar from '../body_new/body';
 const Body=(props)=>{
     const [toggle,settoggle]=useState(false)
 
@@ -35,6 +36,7 @@ const Body=(props)=>{
     return(
 	<>            
          <div className='body'>
+            <Luminar />
 	  
             <About />
             {/*      */}
