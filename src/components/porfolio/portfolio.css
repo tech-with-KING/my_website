@@ -157,15 +157,33 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+
+/* media querry */
 @media (max-width: 768px) {
   .image-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .my_portfolio{
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    background-color: black;
+  }
+
+/* image side from my .my_portfolio */
+  .my_portfolio .my_image-side{
+    background-image: url('./IMG_6606.JPG');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
   .image-list {
-    grid-template-columns: repeat(auto-fit, minmax(800%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
   }
 }
 .my_projects_header{

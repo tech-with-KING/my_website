@@ -5,21 +5,20 @@ import Navbar_Alt from '../../body_new/men';
 const PortfolioPage = () => {
   const text = `This text is just a sample text format for react`
   return (
-    <transition>
-    
     <div  id='my_portfolio_main'>
-    <Navbar_Alt />
     <div className='my_portfolio'>
        <div className="my_text-side">
         <h3 className='my_glassytitle'>Hello There </h3>
         <h1 className='my_glassy-header'>Frontend Developer <br></br>and UI Researcher</h1>
         <p>{text}</p>
         <p>-Linus Trovald</p>
-      </div>
+       </div>
+      
       <div className="my_image-side">
         <div id='my_portfolio_img' ></div>
+        <Projects />
       </div>
-     <Projects />
+
     </div>
     <ul className='stacks'>
       <li>React</li>
@@ -29,7 +28,6 @@ const PortfolioPage = () => {
     </ul>
     <YourComponent />
     </div>
-  </transition>
   );
 };
 
