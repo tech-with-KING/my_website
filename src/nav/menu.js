@@ -23,10 +23,10 @@ const Menue_Bar=(props)=>{
 	height:'40px',
 	objectFit:'contain'
     }
-    const resources =[
+const resources =[
 	{
 	    img:null,
-	    link:'#projects',
+	    link:'/',
 	    name:'Home',
 	    classname:'li',
 	    id:1
@@ -40,7 +40,7 @@ const Menue_Bar=(props)=>{
 	},
 	{
 	    img:'/img/doge-removebg-preview.png',
-	    link:'/Projects',
+	    link:'/Portfolio',
 	    name:'Projects',
 	    classname:'li',
 	    id:3
@@ -50,14 +50,14 @@ const Menue_Bar=(props)=>{
 	    link:'/services',
 	    name:'Services',
 	    classname:'li',
-	    id:5
+	    id:4
 	},
 	{
 	    img:'/milo-removebg-preview.png',
 	    link:'/about',
 	    name:'About Me',
 	    classname:'li',
-	    id:4
+	    id:5
 	},
     ]
     const menu_size = ()=>{
@@ -79,7 +79,7 @@ const Menue_Bar=(props)=>{
 			{
 			resources.map((rec)=>{
 				return(
-				<li key={rec.i}><Link className={rec.classname} key={rec.id} to={rec.link}>
+				<li key={rec.id}><Link className={rec.classname} key={rec.id} to={rec.link}>
 					{rec.name}
 				</Link></li>
 				)
@@ -95,22 +95,27 @@ const Menue_Bar=(props)=>{
 				<div onClick={toggleNavbar} style={{display:'flex', alignItems:'center', justifyContent:'center',color:'rgba(255, 255, 255, 0.3)', background:'transparent'}}>
 					<Hamburger toggled={isOpen} toggle={setOpen}  />
 				</div>
-				<div className={`dropdown ${navbarActive ? 'open' : ''}`}>
+				<div className={`dropdown${navbarActive ? ' open' : ''}`}>
 				
 				<ul className='dropdown_ul'>
-					<li><Link to={'/'} style={{ color:'white'}}>Home</Link></li>
-					<li><Link to={'/portfolio'} style={{color:'white'}}>Portfolio</Link></li>
-					<li><Link to={'/Blog'} style={{ color:'white'}}>Blog</Link></li>
-					<li><Link to={'/services'} style={{ color:'white'}}>Services</Link></li>
-					<li><Link to={'#about'} style={{ color:'white'}}>About</Link></li>
+          {
+          			resources.map((rec)=>{
+				          return(
+				            <li key={rec.id}><Link className={rec.classname} key={rec.id} to={rec.link}>
+					                {rec.name}
+				                </Link></li>
+				          )
+			})
+          }
 				</ul>
-				
-			</div>
-			<div>
+				<div>
 				<img src={alx_logo} alt={alx_logo}></img>
 				<img src={unilag_logo} alt={unilag_logo}></img>
 
 			</div>
+				  
+			</div>
+			
 			</div>
 		</div>
 

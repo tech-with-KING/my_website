@@ -8,7 +8,7 @@ import {useAnimation} from "framer-motion"
 import data from '../projects_page/data'
 import ArticleCard from './ArticleCard';
 import transition from '../transition';
-const Articles=(props)=>{    const [toggle,settoggle]=useState(false)
+const MainArticles=(props)=>{    const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
     const [dark,setdark]=useState(false)
     const darkmode = () =>{
@@ -84,4 +84,4 @@ const sampleArticles = [
         </div>    
      )
 }
-export default transition(Articles);
+export default MainArticles;

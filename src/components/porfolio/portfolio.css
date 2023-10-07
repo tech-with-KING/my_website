@@ -25,6 +25,7 @@
     background-position: center;
     background-size: contain;
     padding: 0;
+    width: 100%;
   }
   .my_portfolio #portfolio_desc h1{
     font-size: 3em;
@@ -173,6 +174,7 @@
 
 /* image side from my .my_portfolio */
   .my_portfolio .my_image-side{
+    with: 100vw !important;
     background-image: url('./IMG_6606.JPG');
     background-repeat:no-repeat;
     background-position: center;

@@ -11,14 +11,10 @@ const About=(props)=>{
       lightcl:'white',
       darkbd:'',
   }
-  const text =`
-  Adeniji Damilola Phebean, a recent Masters graduate working as an Information Manager
-  with an Msc degree in Management Information System from Covenant University. Damilola
-  excels in management skills, project management, operation research, and so on. Currently
-  learning at ALX, Damilola aims to drive impactful solutions through her managerial skills and
-  her goal is to build a strong management team where their impact will be felt in various
-  sectors. Beyond Management, Damilola explores emerging tech trends and fosters
-  community learning and industry advancement.`
+  const text =` Kingsley Francis Okpo a passionate Undergraduate who is currently studying for a bsc in Mathematics
+he is a student by day and software developer by night. He spends most of his free time working on web base projects
+and also application of mathematics to cryptography. He is very productive versatile and efficient and will be very effective 
+in any capacity he is tasked with `
     return(
     <section id="about_me">
       <div id='glassy-profile'>

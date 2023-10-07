@@ -21,15 +21,24 @@
 
 
 #small_menuebar{
-  background-color: blue;
-  color: white;
   width: 100vw;
   height:fit-content;
-
-
 }  
- 
 
+#small_menuebar ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  height: fit-content;
+  text-decoration: none;
+}
+
+#small_menuebar ul li {
+  color: white;
+  font-size: 20px;
+  height: 40px;
+}
 .tol{
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -42,14 +51,15 @@
   }
 
   .dropdown{
-    transition: 0.8s ease;
+    transition:0.8s ease-out;
     height: 0;
     
   }
   .dropdown.open{
     display: block;
-    height: fit-content;
+    height: 300px;
   }
+
  .dropdown_ul{
   display: flex;
   align-items: center;
@@ -58,6 +68,17 @@
   padding: 0;
   margin: 0;
  }
+ .dropdown div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .dropdown div img{
+  height: 50px;
+  object-fit: contain;
+ }
+
  .menuebar_alt img{
   object-fit: contain;
   height: 70px;

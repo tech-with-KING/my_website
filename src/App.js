@@ -8,7 +8,6 @@ import PortfolioPage from './components/porfolio/portfolio';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Luminar from './body_new/body';
 import Services from './services/services';
-import { AnimatePresence } from 'framer-motion';
 import Transitioner from './transition';
 import AnimatedTransittion from './animatedroutes';
 

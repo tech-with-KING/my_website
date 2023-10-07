@@ -2,10 +2,18 @@ import React from 'react';
 import './portfolio.css'
 import transition from '../../transition';
 import Navbar_Alt from '../../body_new/men';
+import {motion} from 'framer-motion'
 const PortfolioPage = () => {
   const text = `This text is just a sample text format for react`
+    const transition = { duration: 0.4, ease: [0.43, 0.13, 0.23, 0.96] };
   return (
-    <div  id='my_portfolio_main'>
+    <motion.div
+      exitBeforeEntry={false}
+      initial={{ opacity: 0.2, scale: 0 }}
+      animate={{ opacity: 1, scale:1  }}
+      transition={transition}
+      exit={{ scale:0, opacity: 0.2, transition: {  transition} }}    
+      id='my_portfolio_main'>
     <div className='my_portfolio'>
        <div className="my_text-side">
         <h3 className='my_glassytitle'>Hello There </h3>
@@ -27,7 +35,7 @@ const PortfolioPage = () => {
       <li>Python</li>
     </ul>
     <YourComponent />
-    </div>
+    </motion.div>
   );
 };
 

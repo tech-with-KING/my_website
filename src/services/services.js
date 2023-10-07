@@ -58,11 +58,18 @@ const Services=(props)=>{
 
     const [toggle,settoggle]=useState(false)
     const {ref:article_ref,inView:article_view}=useInView()
-    const {ref:projec_ref,inView:project_view}=useInView()
+  const {ref:projec_ref,inView:project_view}=useInView()
+  const transition = { duration: 0.4, ease: [0.43, 0.13, 0.23, 0.96] };
     return(
         <>
         
-	    <section id="services">
+	        <motion.div id="services"
+
+                      exitBeforeEntry={true}
+                      initial={{ opacity: 0.2, scale: 0 }}
+                      animate={{ opacity: 1, scale:1  }}
+                      transition={transition}
+                      exit={{ scale:0, opacity: 0.2, transition: {  transition} }}          >
             
         <div className="services-container">
             <div className="service-top">
@@ -76,7 +83,7 @@ const Services=(props)=>{
             {
                 datas.map((data)=>{
                     return(
-                        <div className="service-card" style={{backgroundImage:`url(${data.img})`}}>
+                      <div className="service-card" style={{backgroundImage:`url(${data.img})`}} key={data.id}>
                     <div className="service-icon">
 
                     </div>
@@ -91,9 +98,9 @@ const Services=(props)=>{
                    
             </div>
         </div>
-    </section>
+    </motion.div>
 
    </>
     )
 }
-export default AnimatePage(Services);
+export default Services;

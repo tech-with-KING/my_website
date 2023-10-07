@@ -4,7 +4,7 @@
     text-align: center;
     max-width: 100vw;
     background-color: white;
-    padding: 100px 0;
+    padding: 10px 0;
     margin: 0;
 }
 #services .section-title span{
@@ -35,8 +35,8 @@
     flex-direction: column;
     padding:30px;
     border-radius:10px;
-    background-size: cover;
-    margin:10px 5%;
+    background-size: cover; 
+   margin:10px 5%;
     position:relative;
     z-index: 1;
 }

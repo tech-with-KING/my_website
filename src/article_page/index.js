@@ -39,6 +39,6 @@ const Articles = (props) => {
 		</div>
 	)
 }
-export default transition(Articles);
+export default Articles;
 
 
