@@ -52,12 +52,15 @@
 
   .dropdown{
     transition:0.8s ease-out;
-    height: 0;
-    
+    height: 0 !important;
+    height: 300px;
+    color: white;
+
   }
   .dropdown.open{
     display: block;
-    height: 300px;
+    height: 300px !important;
+    color: white !important;
   }
 
  .dropdown_ul{
@@ -65,8 +68,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   color: white !important;
   padding: 0;
   margin: 0;
+  list-style: none;
+ }
+ .dropdown_ul li{
+  color: white !important;
+ }
+  .dropdown_ul li a{
+  color: white !important;
  }
  .dropdown div{
   width: 100%;

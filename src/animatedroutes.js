@@ -19,7 +19,7 @@ const location = useLocation()
           <Route path="/" element={<Body />} />
       <Route path="/Blog" element={<Articles />} />
       <Route path="/services" element={< Services />} />
-          <Route path="/articles" element={<MainArticle />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
       </AnimatePresence>
